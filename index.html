@@ -1,0 +1,1372 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08111F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="雪国北行十二日">
+<meta property="og:description" content="三个人从东京坐新干线北上北海道的 12 天攻略：平安夜在函馆，圣诞节在札幌，跨年在二世谷，元旦泡温泉。含路线、每日安排、住宿候选、雪场、预算和预订清单。">
+<meta property="og:url" content="https://ziheliu0424.github.io/yukiguni/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308111F'/%3E%3Cg stroke='%23EAF1F7' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M32 12v40M14.7 22l34.6 20M14.7 42l34.6-20'/%3E%3C/g%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>雪国北行十二日</title>
+<meta name="description" content="三个人从东京坐新干线北上北海道的 12 天攻略：平安夜在函馆，圣诞节在札幌，跨年在二世谷，元旦泡温泉。含路线、每日安排、住宿候选、雪场、预算和预订清单。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900&family=Shippori+Mincho:wght@700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900&family=Shippori+Mincho:wght@700;800&display=swap"></noscript>
+<style>
+/* 雪夜电影：深夜底色上的竖向长卷。片名 → 路线随滚动描线 → 十二个日章节逐张叠压 → 住宿与资料附录 */
+:root{
+  color-scheme: dark;
+  /* 颜色：冬夜靛蓝为底，雪白为字，冰蓝（青池）与煤气灯琥珀（小樽运河、圣诞树）两种点缀 */
+  --night:#08111F; --night-2:#0E1A2D; --night-3:#162940;
+  --snow:#EAF1F7; --frost:#97A9BF; --ice:#8EC9E8; --lamp:#F3B562; --ember:#EA8E80;
+  --line:rgba(234,241,247,.13); --hdr-bg:rgba(8,17,31,.74); --veil:#040A14; --shadow:rgba(0,0,0,.55);
+  --moon:rgba(142,201,232,.17); --steam:rgba(234,241,247,.10); --ridge:rgba(234,241,247,.06); --ridge-2:rgba(234,241,247,.035);
+  --bk-lamp:rgba(243,181,98,.26); --bk-ember:rgba(234,142,128,.2);
+  --glow-lamp:rgba(243,181,98,.16); --glow-ice:rgba(142,201,232,.15); --glow-ember:rgba(234,142,128,.15);
+  --tone-city:#0C1631; --tone-onsen:#0D1C2C; --tone-harbor:#0A1730; --tone-rail:#0D192C; --tone-ski:#122642; --tone-pond:#0A1F2F; --tone-hell:#191626;
+  --c-ski:#B9B3F2; --c-mint:#86D1B4;
+  --ticket-bg:#DCEBF2; --ticket-ink:#0B2236; --ticket-hatch:rgba(11,34,54,.05); --ticket-dash:rgba(11,34,54,.32);
+  /* 字体：中文标题用宋体粗体，日文地名用明朝，罗马字用 Bodoni 斜体，时刻与票价用等宽 */
+  --f-display:"Noto Serif SC","Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong",serif;
+  --f-ja:"Shippori Mincho","Hiragino Mincho ProN","Noto Serif SC",serif;
+  --f-latin:"Bodoni Moda","Didot","Bodoni 72","Times New Roman",serif;
+  --f-body:"Noto Sans SC","PingFang SC","Noto Sans CJK SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --f-mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --hdr:52px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + env(safe-area-inset-top,0px) + 8px)}
+body{background:var(--night);color:var(--snow);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:var(--ice)}
+:focus-visible{outline:2px solid var(--ice);outline-offset:3px;border-radius:4px}
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (min-width:760px){.wrap{padding-left:max(40px, env(safe-area-inset-left, 0px));padding-right:max(40px, env(safe-area-inset-right, 0px))}}
+
+/* 顶栏 */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;padding-top:env(safe-area-inset-top,0px);background:var(--hdr-bg);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr-in{height:var(--hdr);display:flex;align-items:center;gap:16px}
+.brand{font:900 16px/1 var(--f-display);letter-spacing:.1em;color:var(--snow);text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto;min-width:0}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font:500 13px/1 var(--f-body);color:var(--frost);text-decoration:none;padding:9px 10px;border-radius:999px;white-space:nowrap}
+.nav a:hover{color:var(--snow);background:var(--line)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--ice),var(--lamp))}
+
+#snow{position:fixed;inset:0;z-index:45;pointer-events:none}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;padding-block:calc(var(--hdr) + env(safe-area-inset-top,0px) + 64px) 150px;background:radial-gradient(900px 520px at 82% 0%,var(--moon),transparent 62%),linear-gradient(180deg,var(--night),var(--tone-city))}
+.hero-in{position:relative;z-index:1;display:grid;gap:22px}
+.eyebrow{font:500 12.5px/1.5 var(--f-mono);letter-spacing:.16em;color:var(--ice);margin:0}
+.hero-title{font:900 clamp(64px,15vw,176px)/1 var(--f-display);letter-spacing:.03em;margin:10px 0 0}
+.hero-title .line{display:block;overflow:hidden;padding-bottom:.05em}
+.hero-title .ch{display:inline-block}
+@supports (-webkit-text-stroke:1px black){.hero-title .line.outline{color:transparent;-webkit-text-stroke:1.6px var(--snow)}}
+.hero-latin{font:italic 500 clamp(19px,2.4vw,27px)/1.35 var(--f-latin);color:var(--frost);margin:0}
+.lead{font-size:clamp(16px,1.6vw,19px);max-width:34em;margin:0}
+.facts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:14px 0 0;border-block:1px solid var(--line)}
+.facts div{padding:18px 16px 18px 0;display:flex;flex-direction:column;gap:4px;min-width:0}
+.facts div+div{padding-left:18px;border-left:1px solid var(--line)}
+.facts dt{order:2;font-size:13px;color:var(--frost)}
+.facts dd{order:1;margin:0;font:500 clamp(28px,3.4vw,42px)/1.05 var(--f-latin);font-variant-numeric:lining-nums}
+.facts dd small{font:500 14px var(--f-body);margin-left:4px;color:var(--frost)}
+.assume{font-size:13px;color:var(--frost);margin:0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:999px;background:var(--lamp);color:var(--night);font:700 15px/1 var(--f-body);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--snow);border:1px solid var(--line)}
+.countdown{font:500 13px var(--f-mono);color:var(--frost);margin-left:4px}
+.countdown b{color:var(--lamp);font-size:19px;font-weight:500}
+.ridge-hero{position:absolute;left:0;bottom:-1px;width:100%;height:130px;z-index:0}
+@media (max-width:760px){
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts div,.facts div+div{padding:14px 12px 14px 0;border-left:0}
+  .facts div:nth-child(even){padding-left:14px;border-left:1px solid var(--line)}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .facts div:last-child{grid-column:1 / -1;padding-left:0;border-left:0}
+}
+
+/* 段落通用 */
+.kicker{font:500 12px/1.4 var(--f-mono);letter-spacing:.18em;color:var(--ice);margin:0;text-transform:uppercase}
+h2{font:900 clamp(32px,5.4vw,56px)/1.15 var(--f-display);margin:0;text-wrap:balance}
+.sec{position:relative;z-index:1;background:var(--night);padding-block:112px 24px}
+.sec-head{display:grid;gap:12px;margin-bottom:40px;max-width:680px}
+.sec-head p{margin:0;color:var(--frost)}
+h3.sub{font:700 20px/1.4 var(--f-display);margin:48px 0 16px}
+
+/* 路线 */
+.route{position:relative;height:280vh;height:280svh;background:var(--night)}
+.route-stage{position:sticky;top:0;height:100vh;height:100svh;padding-top:calc(var(--hdr) + env(safe-area-inset-top,0px));display:flex;align-items:center;overflow:hidden}
+.route-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:48px;align-items:center}
+.route-head{display:grid;gap:14px;align-content:center}
+.route-head>p{margin:0;color:var(--frost);max-width:30em}
+.legs{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:2px}
+.legs li{display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:10px;padding:8px 10px;border-radius:10px;color:var(--frost);transition:background .3s,color .3s}
+.legs li b{font:500 12px/1.9 var(--f-mono);color:var(--frost);letter-spacing:.06em}
+.legs li span{font-size:14px;line-height:1.5}
+.legs li em{display:block;font-style:normal;font-size:12.5px;color:var(--frost)}
+.legs li.on{background:var(--night-3);color:var(--snow)}
+.legs li.on b{color:var(--lamp)}
+.map-fig{margin:0;display:grid;gap:10px;justify-items:center}
+#map{width:100%;height:auto;max-height:calc(100vh - var(--hdr) - 90px);max-height:calc(100svh - var(--hdr) - 90px);aspect-ratio:470 / 650;max-width:100%;overflow:hidden}
+.leg-now{font-size:14px;color:var(--snow);text-align:center;min-height:2.9em;max-width:28em}
+.leg-now b{font:500 12px var(--f-mono);color:var(--lamp);margin-right:6px;letter-spacing:.06em}
+.leg-now em{display:block;font-style:normal;font-size:12.5px;color:var(--frost)}
+.land{fill:var(--night-3);stroke:var(--frost);stroke-opacity:.38;stroke-width:.8}
+.grat{stroke:var(--line);stroke-width:.6;fill:none}
+.grat-t{font:400 9px var(--f-mono);fill:var(--frost);opacity:.75}
+.sea-t{font:700 11px var(--f-display);fill:var(--frost);opacity:.55;letter-spacing:.32em}
+.sea-t.v{writing-mode:vertical-rl}
+.leg-base{fill:none;stroke:var(--frost);stroke-opacity:.42;stroke-width:1.1;stroke-dasharray:2.5 4}
+.leg{fill:none;stroke:var(--lamp);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.st .dot{fill:var(--night);stroke:var(--snow);stroke-width:1.6;transition:fill .35s,stroke .35s}
+.st .halo{fill:var(--lamp);opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(.4);transition:opacity .5s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.st.on .dot{fill:var(--lamp);stroke:var(--lamp)}
+.st.on .halo{opacity:.28;transform:scale(1)}
+.st text{paint-order:stroke;stroke:var(--night);stroke-width:3.5px;stroke-linejoin:round}
+.st .zh{font:500 13px var(--f-body);fill:var(--snow)}
+.st .ja{font:700 9.5px var(--f-ja);fill:var(--frost)}
+.entry-t{font:500 10px var(--f-mono);fill:var(--frost);paint-order:stroke;stroke:var(--night);stroke-width:3px}
+@media (max-width:760px){
+  .route-grid{grid-template-columns:minmax(0,1fr);gap:6px}
+  .route-head{gap:6px}
+  .route-head>p,.legs{display:none}
+  #map{max-height:calc(100vh - var(--hdr) - 190px);max-height:calc(100svh - var(--hdr) - 190px)}
+}
+.route.static{height:auto}
+.route.static .route-stage{position:relative;height:auto;padding-block:calc(var(--hdr) + 48px) 48px}
+.route.static .legs,.route.static .route-head>p{display:grid}
+.route.static .leg-now{display:none}
+
+/* 十二日 */
+.days-intro{position:relative;z-index:1;padding-block:110px 56px;display:grid;gap:14px}
+.days-intro>p{margin:0;color:var(--frost);max-width:36em}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.jump a{font:500 13px/1 var(--f-body);color:var(--snow);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px}
+.jump a:hover{background:var(--line)}
+.jump a b{font:500 12px var(--f-mono);color:var(--lamp);margin-right:6px}
+.days{position:relative}
+.day{position:sticky;top:calc(var(--hdr) + env(safe-area-inset-top,0px))}
+.day-card{position:relative;isolation:isolate;min-height:calc(100vh - var(--hdr));min-height:calc(100svh - var(--hdr) - env(safe-area-inset-top,0px));display:flex;flex-direction:column;justify-content:center;padding-block:56px 72px;background:radial-gradient(900px 520px at 88% 0%,var(--glow,transparent),transparent 66%),var(--tone);border-radius:28px 28px 0 0;box-shadow:0 -28px 60px -24px var(--shadow);overflow:hidden;transform-origin:50% 0;transform:scale(calc(1 - var(--cover,0) * .06))}
+.day-card::after{content:"";position:absolute;inset:0;z-index:3;background:var(--veil);opacity:calc(var(--cover,0) * .62);pointer-events:none}
+.day-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.day-ja{position:absolute;top:28px;right:max(8px,3vw);writing-mode:vertical-rl;font:800 clamp(110px,19vw,250px)/1 var(--f-ja);letter-spacing:.04em;color:var(--snow);opacity:.075;white-space:nowrap}
+.day-in{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.day-head{display:grid;gap:14px;align-content:start}
+.day-no{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin:0;font:500 13px/1.4 var(--f-mono);letter-spacing:.12em;color:var(--frost)}
+.day-no b{font-weight:500;font-size:15px;color:var(--lamp)}
+.day-title{font:900 clamp(28px,4.4vw,48px)/1.22 var(--f-display);margin:0;text-wrap:balance}
+.day-latin{font:italic 500 22px/1.2 var(--f-latin);color:var(--ice);margin:0}
+.tags{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
+.tag{font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;border:1px solid currentColor;color:var(--frost)}
+.tag[data-k="ski"]{color:var(--c-ski)} .tag[data-k="onsen"]{color:var(--lamp)} .tag[data-k="xmas"]{color:var(--ember)}
+.tag[data-k="snow"]{color:var(--ice)} .tag[data-k="food"]{color:var(--c-mint)} .tag[data-k="night"]{color:var(--snow)}
+.day-meta{display:grid;gap:10px;margin:6px 0 0}
+.day-meta div{display:grid;grid-template-columns:3.4em minmax(0,1fr);gap:10px;padding-top:10px;border-top:1px solid var(--line)}
+.day-meta dt{font:500 12px/1.9 var(--f-mono);letter-spacing:.1em;color:var(--frost)}
+.day-meta dd{margin:0;font-size:14px}
+.day-body{display:grid;gap:22px;min-width:0}
+.sched{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.sched li{display:grid;grid-template-columns:4.4em minmax(0,1fr);gap:14px;align-items:baseline}
+.sched time{font:500 13px/1.6 var(--f-mono);color:var(--lamp);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+.sched p{margin:0}
+.sched small{display:block;font-size:13px;color:var(--frost)}
+.note{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:14px;color:var(--frost);max-width:40em}
+.note b{flex:none;font:500 11px/1 var(--f-mono);letter-spacing:.1em;color:var(--night);background:var(--lamp);padding:5px 7px;border-radius:4px;margin-top:3px}
+.tickets{display:grid;gap:12px}
+.ticket{display:grid;grid-template-columns:minmax(0,1fr) 118px;max-width:540px;color:var(--ticket-ink);background:repeating-linear-gradient(135deg,transparent 0 6px,var(--ticket-hatch) 6px 7px),var(--ticket-bg);border-radius:10px;
+  -webkit-mask:radial-gradient(circle 9px at calc(100% - 118px) 0,transparent 98%,#000) top/100% 51% no-repeat,radial-gradient(circle 9px at calc(100% - 118px) 100%,transparent 98%,#000) bottom/100% 51% no-repeat;
+  mask:radial-gradient(circle 9px at calc(100% - 118px) 0,transparent 98%,#000) top/100% 51% no-repeat,radial-gradient(circle 9px at calc(100% - 118px) 100%,transparent 98%,#000) bottom/100% 51% no-repeat}
+.tk-main{padding:14px 18px;display:grid;gap:3px;min-width:0}
+.tk-kind{font:500 10.5px/1.3 var(--f-mono);letter-spacing:.14em;opacity:.7}
+.tk-route{margin:0;font:800 clamp(18px,2.4vw,23px)/1.3 var(--f-ja);display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline}
+.tk-route i{font-style:normal;font-family:var(--f-mono);font-size:15px;opacity:.6}
+.tk-sub{font:500 12px/1.5 var(--f-mono);opacity:.8;margin:0}
+.tk-stub{border-left:2px dashed var(--ticket-dash);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;padding:10px 8px;text-align:center}
+.tk-stub b{font:500 16px/1.2 var(--f-mono);font-variant-numeric:tabular-nums}
+.tk-stub span{font:500 10.5px/1.2 var(--f-mono);opacity:.7;letter-spacing:.06em}
+.fx{position:absolute;inset:0;pointer-events:none}
+.bokeh{background-image:radial-gradient(circle at 8% 24%,var(--bk-lamp) 0,transparent 34px),radial-gradient(circle at 24% 72%,var(--bk-ember) 0,transparent 26px),radial-gradient(circle at 41% 12%,var(--bk-lamp) 0,transparent 22px),radial-gradient(circle at 60% 84%,var(--bk-lamp) 0,transparent 42px),radial-gradient(circle at 76% 36%,var(--bk-ember) 0,transparent 30px),radial-gradient(circle at 93% 66%,var(--bk-lamp) 0,transparent 24px),radial-gradient(circle at 52% 46%,var(--bk-lamp) 0,transparent 16px);animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.4}to{opacity:1}}
+.steam::before,.steam::after{content:"";position:absolute;bottom:-20%;width:70%;height:70%;border-radius:50%;background:radial-gradient(closest-side,var(--steam),transparent);filter:blur(12px);animation:rise 16s ease-in-out infinite}
+.steam::before{left:-15%}
+.steam::after{right:-20%;animation-delay:-8s}
+@keyframes rise{0%{transform:translateY(25%) scale(.9);opacity:0}35%{opacity:1}100%{transform:translateY(-55%) scale(1.3);opacity:0}}
+.ridge{position:absolute;left:0;bottom:0;width:100%;height:26%}
+@media (max-width:860px){
+  .day-in{grid-template-columns:minmax(0,1fr);gap:30px}
+  .day-card{border-radius:22px 22px 0 0;padding-block:44px 64px;justify-content:flex-start}
+  .ticket{grid-template-columns:minmax(0,1fr) 96px;-webkit-mask:radial-gradient(circle 8px at calc(100% - 96px) 0,transparent 98%,#000) top/100% 51% no-repeat,radial-gradient(circle 8px at calc(100% - 96px) 100%,transparent 98%,#000) bottom/100% 51% no-repeat;mask:radial-gradient(circle 8px at calc(100% - 96px) 0,transparent 98%,#000) top/100% 51% no-repeat,radial-gradient(circle 8px at calc(100% - 96px) 100%,transparent 98%,#000) bottom/100% 51% no-repeat}
+  .tk-main{padding:12px 14px}
+  .tk-stub b{font-size:14px}
+}
+.dayind{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:48;display:flex;gap:10px;align-items:center;padding:10px 14px;border-radius:999px;background:var(--hdr-bg);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--line);font:500 13px/1 var(--f-body);transform:translateY(calc(100% + 40px));transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.dayind.show{transform:none}
+.dayind b{font:500 12px/1 var(--f-mono);color:var(--lamp);letter-spacing:.08em}
+
+/* 住宿 */
+.stays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.stay{border:1px solid var(--line);border-radius:16px;background:var(--night-2);padding:22px;display:grid;gap:4px;align-content:start;min-width:0}
+.stay-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 10px;margin-bottom:6px}
+.stay h3{font:900 22px/1.3 var(--f-display);margin:0}
+.s-when{font:500 12px/1.4 var(--f-mono);color:var(--lamp);letter-spacing:.04em}
+.opts{list-style:none;margin:0;padding:0;display:grid}
+.opts li{padding-block:12px;border-top:1px solid var(--line);display:grid;gap:3px}
+.opts a{color:var(--snow);text-decoration:none;font-weight:500;font-size:15px;line-height:1.45}
+.opts a:hover{color:var(--ice);text-decoration:underline}
+.pick{font:500 10.5px/1 var(--f-mono);color:var(--night);background:var(--lamp);padding:3px 6px;border-radius:4px;margin-right:6px;vertical-align:2px;letter-spacing:.06em}
+.plat{font:500 10.5px/1 var(--f-mono);color:var(--frost);border:1px solid var(--line);padding:2px 5px;border-radius:4px;margin-left:6px;vertical-align:2px}
+.opts .meta{font:500 12.5px/1.5 var(--f-mono);color:var(--frost);font-variant-numeric:tabular-nums}
+.opts .meta b{color:var(--snow);font-weight:500}
+.opts .why{font-size:13.5px;color:var(--frost);line-height:1.55}
+.stay-note{font-size:13px;color:var(--frost);margin:8px 0 0}
+@media (max-width:1000px){.stays{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.stays{grid-template-columns:minmax(0,1fr)}}
+
+/* 日历 */
+.cal-wrap{overflow-x:auto;padding-bottom:10px}
+.cal{min-width:820px;display:grid;gap:8px}
+.cal-row{display:grid;grid-template-columns:184px repeat(12,minmax(0,1fr));align-items:center;min-height:34px}
+.cal-row>*{grid-row:1}
+.cal-lbl{grid-column:1;font-size:13px;line-height:1.4;color:var(--frost);padding-right:14px}
+.cal-lbl small{display:block;font-size:11.5px}
+.cal-d{font:500 11.5px/1.3 var(--f-mono);color:var(--frost);text-align:center}
+.cal-d b{display:block;font-size:15px;font-weight:500;color:var(--snow)}
+.cal-d.we b{color:var(--lamp)}
+.cal-where{border-block:1px solid var(--line);padding-block:6px}
+.cal-where span{font-size:12px;line-height:1.35;text-align:center;padding:4px 2px;border-left:1px solid var(--line)}
+.bar{height:26px;border-radius:6px;display:flex;align-items:center;padding:0 10px;font-size:12px;white-space:nowrap;overflow:hidden;color:var(--snow);background:var(--line);border:1px solid var(--bc)}
+.bar.dash{border-style:dashed;background:transparent}
+@supports (color:color-mix(in srgb,red 50%,blue)){
+  .bar{background:color-mix(in srgb,var(--bc) 26%,transparent);border-color:color-mix(in srgb,var(--bc) 65%,transparent)}
+  .bar.dash{background:color-mix(in srgb,var(--bc) 10%,transparent)}
+  .resort.epic{border-color:color-mix(in srgb,var(--lamp) 55%,transparent)}
+}
+.bar.cont{border-top-left-radius:0;border-bottom-left-radius:0;border-left-width:0}
+.star{justify-self:center;z-index:1;color:var(--lamp);font-size:17px;line-height:1;text-shadow:0 0 6px var(--night)}
+.off{justify-self:stretch;text-align:center;font-size:11.5px;color:var(--frost);border:1px solid var(--line);border-radius:6px;padding:4px 5px}
+
+/* 雪场 */
+.ski{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.resort{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--night-2);display:grid;gap:16px;align-content:start;min-width:0}
+.resort.epic{border-color:var(--lamp)}
+.resort header{display:grid;gap:6px}
+.resort h3{font:900 26px/1.2 var(--f-display);margin:0}
+.r-latin{font:italic 500 19px var(--f-latin);color:var(--ice)}
+.r-when{font:500 12px/1.4 var(--f-mono);color:var(--lamp);letter-spacing:.06em}
+.resort dl{display:grid;gap:0;margin:0}
+.resort dl div{display:grid;grid-template-columns:4.4em minmax(0,1fr);gap:12px;padding-block:10px;border-top:1px solid var(--line)}
+.resort dt{font-size:13px;color:var(--frost)}
+.resort dd{margin:0;font-size:14.5px}
+.prep{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px 28px}
+.prep li{font-size:14.5px;padding-top:12px;border-top:1px solid var(--line)}
+.prep li b{display:block;font:700 15px/1.5 var(--f-display);margin-bottom:2px}
+.prep li span{color:var(--frost)}
+@media (max-width:1000px){.ski{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.resort{padding:22px}}
+
+/* 预算 */
+.budget-total{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:18px}
+.budget-total b{font:500 clamp(40px,6vw,64px)/1 var(--f-latin);font-variant-numeric:lining-nums}
+.budget-total span{color:var(--frost);font-size:15px}
+.stack{display:flex;gap:2px;height:52px;border-radius:10px;overflow:hidden}
+.stack span{background:var(--bc);min-width:0}
+.legend{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px}
+.legend li{display:grid;grid-template-columns:12px minmax(0,1fr) auto;gap:10px;align-items:start;font-size:14px;border-top:1px solid var(--line);padding-top:10px}
+.legend i{width:12px;height:12px;border-radius:3px;background:var(--bc);margin-top:6px}
+.legend small{display:block;color:var(--frost);font-size:12.5px;line-height:1.5}
+.legend .amt{font:500 14px/1.7 var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+.hbars{display:grid;gap:12px;max-width:820px}
+.hbar{display:grid;grid-template-columns:9.5em minmax(0,1fr) 8.5em;gap:14px;align-items:center;font-size:14px}
+.hbar small.d{display:block;color:var(--frost);font-size:12px}
+.track{height:14px;background:var(--line);border-radius:7px;overflow:hidden}
+.fill{height:100%;background:var(--bc);border-radius:7px}
+.hbar .val{font:500 13px var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+.hbar .val small{display:block;color:var(--frost);font-size:11.5px}
+.pass-grp{display:grid;gap:10px;margin-bottom:22px}
+.pass-grp h4{margin:0;font:500 13px var(--f-mono);letter-spacing:.06em;color:var(--frost)}
+.fine{font-size:13.5px;color:var(--frost);margin:18px 0 0;max-width:46em}
+@media (max-width:760px){
+  .legend{grid-template-columns:minmax(0,1fr)}
+  .hbar{grid-template-columns:6.4em minmax(0,1fr) 6.8em;gap:10px;font-size:13px}
+}
+
+/* 天气 */
+.temps{display:grid;gap:12px;max-width:820px}
+.trow{display:grid;grid-template-columns:7.2em minmax(0,1fr);gap:14px;align-items:center;font-size:14px}
+.trow small{display:block;font-size:11.5px;color:var(--frost)}
+.tscale{position:relative;height:24px;margin-inline:30px}
+.tscale::before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:var(--line)}
+.trange{position:absolute;top:5px;height:14px;border-radius:7px;background:linear-gradient(90deg,var(--ice),var(--snow))}
+.trange::before,.trange::after{position:absolute;top:50%;transform:translateY(-50%);font:500 12px var(--f-mono);color:var(--frost);white-space:nowrap}
+.trange::before{content:attr(data-lo);right:calc(100% + 6px)}
+.trange::after{content:attr(data-hi);left:calc(100% + 6px)}
+.taxis{position:relative;height:18px;margin-inline:30px;font:500 11px var(--f-mono);color:var(--frost)}
+.taxis span{position:absolute;transform:translateX(-50%)}
+.pack{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px 28px}
+.pack li{padding-top:12px;border-top:1px solid var(--line);font-size:14.5px}
+.pack b{display:block;font:700 15px/1.5 var(--f-display)}
+.pack span{color:var(--frost)}
+
+/* 清单 */
+.chk-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+.chk-count{font:500 14px var(--f-mono);color:var(--frost)}
+.chk-count b{color:var(--lamp);font-weight:500;font-size:20px}
+.chk{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:860px}
+.chk li{border-bottom:1px solid var(--line)}
+.chk label{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:14px;align-items:center;padding:15px 2px;cursor:pointer}
+.chk input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:1.5px solid var(--frost);border-radius:6px;display:grid;place-items:center;margin:0;cursor:pointer;transition:background .2s,border-color .2s}
+.chk input::after{content:"";width:6px;height:11px;border:solid var(--night);border-width:0 2px 2px 0;transform:rotate(45deg) scale(0);transition:transform .2s;margin-top:-3px}
+.chk input:checked{background:var(--lamp);border-color:var(--lamp)}
+.chk input:checked::after{transform:rotate(45deg) scale(1)}
+.ct{font-size:15px;min-width:0}
+.ct small{display:block;font-size:13px;color:var(--frost)}
+.chk input:checked + .ct{color:var(--frost);text-decoration:line-through;text-decoration-color:var(--frost)}
+.when{font:500 11.5px/1 var(--f-mono);padding:6px 8px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.when[data-u="now"]{color:var(--ember)} .when[data-u="nov"]{color:var(--lamp)} .when[data-u="month"]{color:var(--ice)} .when[data-u="week"]{color:var(--frost)}
+
+/* 贴士与季节 */
+.tips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 32px}
+.tip{border-top:1px solid var(--line);padding-top:16px;min-width:0}
+.tip h3{font:700 17px/1.45 var(--f-display);margin:0 0 6px}
+.tip p{margin:0;color:var(--frost);font-size:14.5px}
+.season{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:8px}
+.season h3{font:700 18px/1.4 var(--f-display);margin:0 0 10px}
+.season ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.season li{display:grid;grid-template-columns:1.4em minmax(0,1fr);font-size:14.5px}
+.season li::before{font:500 14px var(--f-mono)}
+.yes li::before{content:"✓";color:var(--c-mint)}
+.no li::before{content:"✕";color:var(--ember)}
+.season li span{color:var(--frost)}
+.season li span b{color:var(--snow);font-weight:500}
+@media (max-width:1000px){.tips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.tips,.season{grid-template-columns:minmax(0,1fr)}}
+
+.foot{position:relative;z-index:1;background:var(--night);padding-block:96px 120px;color:var(--frost);font-size:13.5px;border-top:1px solid var(--line);margin-top:96px}
+.foot-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.foot h3{font:700 15px/1.4 var(--f-display);color:var(--snow);margin:0 0 10px}
+.foot p{margin:0 0 10px;max-width:40em}
+.foot ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.foot-mark{font:italic 500 22px var(--f-latin);color:var(--snow);margin:0 0 12px}
+@media (max-width:760px){.foot-in{grid-template-columns:minmax(0,1fr)}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fx,.steam::before,.steam::after{animation:none!important}
+  .dayind{transition:none}
+}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top">雪国北行</a>
+    <nav class="nav" aria-label="章节">
+      <a href="#route">路线</a><a href="#days">十二日</a><a href="#stays">住宿</a><a href="#ski">雪场</a><a href="#calendar">日历</a><a href="#budget">预算</a><a href="#weather">穿搭</a><a href="#checklist">清单</a><a href="#tips">贴士</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <p class="eyebrow">2026.12.22 → 2027.01.02 · 3 人 · 东京进 · 札幌出</p>
+    <h1 class="hero-title" aria-label="雪国北行十二日"><span class="line" aria-hidden="true">雪国北行</span><span class="line outline" aria-hidden="true">十二日</span></h1>
+    <p class="hero-latin">From Tokyo, northbound, into the snow country.</p>
+    <p class="lead">坐新干线一路往北，经青森穿过海底隧道进北海道。平安夜在函馆，圣诞节在札幌，跨年在二世谷的雪道旁，元旦去登别泡温泉。</p>
+    <dl class="facts">
+      <div><dt>天 · 11 晚</dt><dd>12</dd></div>
+      <div><dt>人 · 一对情侣 + 1 位朋友</dt><dd>3</dd></div>
+      <div><dt>天滑雪 · 3 座雪场</dt><dd>3.5</dd></div>
+      <div><dt>晚温泉旅馆</dt><dd>3</dd></div>
+      <div><dt>人均日本境内预算（约 2.7 万元）</dt><dd>¥63<small>万</small></dd></div>
+    </dl>
+    <p class="assume">按 3 人同住、城市和雪场住整套房源、温泉乡住旅馆估算。价格整理于 2026-10-30，标「约」的以官网为准。</p>
+    <div class="hero-cta">
+      <a class="btn" href="#route">看路线 ↓</a>
+      <a class="btn ghost" href="#stays">住宿候选</a>
+      <span class="countdown">距离出发还有 <b id="cd">53</b> 天</span>
+    </div>
+  </div>
+  <svg class="ridge-hero" viewBox="0 0 1200 130" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 130V96L90 78L170 90L250 66L330 82L410 54L470 30L530 54L610 76L700 62L790 86L880 70L980 92L1080 76L1200 94V130Z" fill="var(--ridge)"/>
+    <path d="M0 130V110L120 98L220 108L340 92L460 104L560 90L680 102L800 94L920 108L1040 96L1200 106V130Z" fill="var(--night)"/>
+  </svg>
+</section>
+
+<section class="route" id="route">
+  <div class="route-stage">
+    <div class="wrap route-grid">
+      <div class="route-head">
+        <p class="kicker">Route · 约 1,900 km</p>
+        <h2>一条往北的线</h2>
+        <p>东京到新千岁机场，全程铁路加巴士，不需要在雪地里开车。往下滚，线会一段一段画出来。</p>
+        <ol class="legs" id="legs">
+          <li><b>D2</b><span>东京 → 酸汤温泉<em>隼号新干线 3h10m，JR 巴士约 100 分</em></span></li>
+          <li><b>D3</b><span>酸汤 → 函馆<em>北海道新干线穿过青函隧道，约 1h</em></span></li>
+          <li><b>D4</b><span>函馆 → 札幌<em>特急北斗沿内浦湾北上，约 3h45m</em></span></li>
+          <li><b>D5</b><span>札幌 → 旭川 → 白金温泉<em>特急 85 分，道北巴士</em></span></li>
+          <li><b>D6</b><span>白金 → 美瑛 → 富良野<em>巴士 + 富良野线 40 分</em></span></li>
+          <li><b>D8</b><span>富良野 → 小樽 → 二世谷<em>经泷川、札幌，约 5h</em></span></li>
+          <li><b>D11</b><span>二世谷 → 留寿都 → 登别<em>打车约 45 分，滑半天，Resort Liner 巴士去登别</em></span></li>
+          <li><b>D12</b><span>登别 → 新千岁机场<em>直达巴士约 1h</em></span></li>
+        </ol>
+      </div>
+      <figure class="map-fig">
+        <svg id="map" viewBox="0 0 470 650" role="img" aria-label="路线图：东京北上至青森酸汤温泉，经函馆、札幌、旭川、白金温泉、富良野、小樽、二世谷、留寿都、登别，到新千岁机场"></svg>
+        <figcaption class="leg-now" id="legNow"><b>全程</b>约 1,900 km，铁路 + 巴士<em>往下滚动开始</em></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="wrap days-intro" id="days">
+  <p class="kicker">Twelve days · 12.22 – 1.02</p>
+  <h2>十二日</h2>
+  <p>每一天是一个章节，往下滚会一张叠着一张。时间是建议时刻，列车和巴士班次以 12 月时刻表为准。</p>
+  <nav class="jump" aria-label="跳到某一天">
+    <a href="#d1"><b>D1</b>东京</a><a href="#d2"><b>D2</b>酸汤</a><a href="#d3"><b>D3</b>函馆·平安夜</a><a href="#d4"><b>D4</b>札幌·圣诞</a><a href="#d5"><b>D5</b>旭川·白金</a><a href="#d6"><b>D6</b>美瑛</a><a href="#d7"><b>D7</b>富良野</a><a href="#d8"><b>D8</b>小樽</a><a href="#d9"><b>D9</b>二世谷</a><a href="#d10"><b>D10</b>跨年</a><a href="#d11"><b>D11</b>元旦</a><a href="#d12"><b>D12</b>回程</a>
+  </nav>
+</section>
+
+<div class="days" id="daysStack">
+
+<article class="day" id="d1" data-label="东京" style="--tone:var(--tone-city);--glow:var(--glow-lamp)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">東京</span><span class="fx bokeh"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 01</b><span>/ 12</span><span>12.22 周二</span></p>
+        <h3 class="day-title">抵达，丸之内的圣诞灯海</h3>
+        <p class="day-latin">Tokyo</p>
+        <ul class="tags"><li class="tag" data-k="xmas">圣诞</li><li class="tag" data-k="night">夜景</li></ul>
+        <dl class="day-meta"><div><dt>住宿</dt><dd><a href="https://www.airbnb.com/rooms/1606974340275488529?check_in=2026-12-22&amp;check_out=2026-12-23&amp;adults=3">上野·浅草宽敞日式大房</a> ★4.92 · ¥36,732/晚，人均约 ¥12,200</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>午后</time><p>抵达羽田或成田，坐京急或京成到上野、浅草一带，入住。</p></li>
+          <li><time>17:00</time><p>丸之内仲通的香槟金灯树，一路走到东京站丸之内驿舍看夜景。</p></li>
+          <li><time>19:00</time><p>体力够的话去六本木榉树坂看灯饰。<small>可选</small></p></li>
+          <li><time>睡前</time><p>订好 D2、D3 的新干线和 D4 特急北斗的座位。</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d2" data-label="八甲田 · 酸汤温泉" style="--tone:var(--tone-onsen);--glow:var(--glow-ice)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">酸ヶ湯</span><span class="fx steam"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 02</b><span>/ 12</span><span>12.23 周三</span></p>
+        <h3 class="day-title">新干线北上，住进雪国秘汤</h3>
+        <p class="day-latin">Hakkōda · Sukayu Onsen</p>
+        <ul class="tags"><li class="tag" data-k="onsen">温泉</li><li class="tag" data-k="snow">看雪</li></ul>
+        <dl class="day-meta"><div><dt>住宿</dt><dd>酸ヶ汤温泉旅馆，3 人和室 · 1 泊 2 食，人均约 ¥15,000–25,000</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>08:00</time><p>上野站坐隼号到新青森，约 3 小时。</p></li>
+          <li><time>11:30</time><p>青森站坐 JR 巴士「みずうみ号」上山，冬季约 100 分钟，班次少，先查好时刻表。</p></li>
+          <li><time>14:00</time><p>天气好就坐八甲田缆车看雪山。</p></li>
+          <li><time>傍晚</time><p>泡「ヒバ千人风呂」，160 叠的桧木混浴大浴场。<small>女性专用时段 8:00–9:00、20:00–21:00，可穿汤浴着（以现场为准）</small></p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：东京到新青森">
+            <div class="tk-main"><span class="tk-kind">乗車券 · 特急券</span><p class="tk-route"><span>東京</span><i>→</i><span>新青森</span></p><p class="tk-sub">はやぶさ · 約3h10m · 全車指定</p></div>
+            <div class="tk-stub"><b>¥17,670</b><span>D2 · 12.23</span></div>
+          </div>
+          <div class="ticket" role="group" aria-label="车票：青森到酸汤温泉">
+            <div class="tk-main"><span class="tk-kind">バス</span><p class="tk-route"><span>青森</span><i>→</i><span>酸ヶ湯温泉</span></p><p class="tk-sub">JRバス みずうみ号 · 冬季約100分</p></div>
+            <div class="tk-stub"><b>巴士</b><span>D2 · 12.23</span></div>
+          </div>
+        </div>
+        <p class="note"><b>注意</b><span>八甲田的树冰（雪怪）1 月下旬才成形，12 月看到的是雪原和雾凇。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d3" data-label="函馆 · 平安夜" style="--tone:var(--tone-harbor);--glow:var(--glow-lamp)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">函館</span><span class="fx bokeh"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 03</b><span>/ 12</span><span>12.24 周四 · 平安夜</span></p>
+        <h3 class="day-title">穿过海底隧道，在函馆过平安夜</h3>
+        <p class="day-latin">Hakodate · Christmas Eve</p>
+        <ul class="tags"><li class="tag" data-k="xmas">圣诞</li><li class="tag" data-k="night">夜景</li><li class="tag" data-k="food">美食</li></ul>
+        <dl class="day-meta">
+          <div><dt>住宿</dt><dd><a href="https://www.airbnb.com/rooms/1201682282296980063?check_in=2026-12-24&amp;check_out=2026-12-25&amp;adults=3">箱街懐宿·橙葵 古民家</a> ★4.98 · ¥22,600/晚，人均约 ¥7,500</dd></div>
+          <div><dt>提前订</dt><dd>平安夜晚餐，函馆湾区的西餐和海鲜店会订满</dd></div>
+        </dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>09:30</time><p>巴士下山，青森古川市场吃「のっけ丼」，自己挑海鲜盖到饭上。</p></li>
+          <li><time>13:00</time><p>新青森 → 新函馆北斗约 1 小时，穿过海底 240 米的青函隧道，换函馆 Liner 进市区。</p></li>
+          <li><time>15:00</time><p>元町八幡坂（坡道一路通到海港），东正教堂，金森红砖仓库。</p></li>
+          <li><time>18:00</time><p>函馆圣诞幻想节：海上巨型圣诞树点灯，往年点灯时有短时烟火。平安夜人最多，早点去。<small>12/1–12/25</small></p></li>
+          <li><time>19:30</time><p>坐函馆山缆车看夜景，往返 ¥1,800，冬季运营到 21:00。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：新青森到新函馆北斗">
+            <div class="tk-main"><span class="tk-kind">乗車券 · 特急券</span><p class="tk-route"><span>新青森</span><i>→</i><span>新函館北斗</span></p><p class="tk-sub">はやぶさ · 約1h · 青函トンネル経由</p></div>
+            <div class="tk-stub"><b>≈¥8,000</b><span>含函館 Liner</span></div>
+          </div>
+        </div>
+        <p class="note"><b>注意</b><span>古民家是榻榻米铺被。想睡床可以换成住宿候选里的 3 卧日式艺术住宅。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d4" data-label="函馆 → 札幌 · 圣诞节" style="--tone:var(--tone-city);--glow:var(--glow-ember)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">札幌</span><span class="fx bokeh"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 04</b><span>/ 12</span><span>12.25 周五 · 圣诞节</span></p>
+        <h3 class="day-title">坐特急北上，赶上札幌市集的最后一晚</h3>
+        <p class="day-latin">Hakodate → Sapporo</p>
+        <ul class="tags"><li class="tag" data-k="xmas">圣诞</li><li class="tag" data-k="food">美食</li><li class="tag" data-k="night">夜景</li></ul>
+        <dl class="day-meta"><div><dt>住宿</dt><dd><a href="https://www.airbnb.com/rooms/1572053407937060082?check_in=2026-12-25&amp;check_out=2026-12-26&amp;adults=3">Altiplano（二条市场旁）</a> ★4.98 · ¥60,000/晚，人均 ¥20,000</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>06:30</time><p>函馆朝市：钓活乌贼，吃海鲜盖饭。</p></li>
+          <li><time>09:00</time><p>五棱郭塔，从上面看雪里的星形城郭。<small>可选</small></p></li>
+          <li><time>10:30</time><p>特急北斗 函馆 → 札幌，约 3 小时 45 分，一路沿着内浦湾的海岸线。</p></li>
+          <li><time>14:30</time><p>到札幌，入住休息。</p></li>
+          <li><time>17:00</time><p>大通公园慕尼黑圣诞市集最后一晚（营业到 21:00），白色灯树节大通会场同日结束。</p></li>
+          <li><time>19:30</time><p>汤咖喱或成吉思汗烤羊肉。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：函馆到札幌">
+            <div class="tk-main"><span class="tk-kind">乗車券 · 特急券</span><p class="tk-route"><span>函館</span><i>→</i><span>札幌</span></p><p class="tk-sub">特急北斗 · 約3h45m · 全車指定</p></div>
+            <div class="tk-stub"><b>≈¥9,500</b><span>D4 · 12.25</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d5" data-label="旭川 → 白金温泉" style="--tone:var(--tone-pond);--glow:var(--glow-ice)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">旭川</span><span class="fx steam"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 05</b><span>/ 12</span><span>12.26 周六</span></p>
+        <h3 class="day-title">看企鹅散步，晚上去点灯的青池</h3>
+        <p class="day-latin">Asahikawa · Shirogane</p>
+        <ul class="tags"><li class="tag" data-k="snow">看雪</li><li class="tag" data-k="onsen">温泉</li><li class="tag" data-k="food">美食</li></ul>
+        <dl class="day-meta"><div><dt>住宿</dt><dd>白金温泉旅馆，3 人和室 · 1 泊 2 食，人均约 ¥20,000–40,000</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>07:00</time><p>走到隔壁的二条市场吃海鲜早餐。</p></li>
+          <li><time>08:30</time><p>特急 Kamui 或 Lilac 札幌 → 旭川，约 85 分钟。</p></li>
+          <li><time>11:00</time><p>旭山动物园企鹅散步，14:30 还有一场。<small>冬季 10:30–15:30 开园，门票 ¥1,000；12/30–1/1 休园，所以排在今天</small></p></li>
+          <li><time>13:00</time><p>回旭川市区吃拉面（蜂屋、青叶）。</p></li>
+          <li><time>15:30</time><p>坐道北巴士去白金温泉。</p></li>
+          <li><time>17:00</time><p>白金青池冬季点灯，日落到 21:00，下雪的时候最好看。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：札幌到旭川">
+            <div class="tk-main"><span class="tk-kind">乗車券 · 特急券</span><p class="tk-route"><span>札幌</span><i>→</i><span>旭川</span></p><p class="tk-sub">特急カムイ / ライラック · 85分 · 全車指定</p></div>
+            <div class="tk-stub"><b>≈¥5,200</b><span>D5 · 12.26</span></div>
+          </div>
+        </div>
+        <p class="note"><b>注意</b><span>企鹅散步要等积雪够厚才开始，往年在 12 月下旬，以动物园当天公告为准。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d6" data-label="美瑛 → 富良野" style="--tone:var(--tone-rail);--glow:var(--glow-ice)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">美瑛</span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 06</b><span>/ 12</span><span>12.27 周日</span></p>
+        <h3 class="day-title">冰瀑、雪原，傍晚走进森林精灵露台</h3>
+        <p class="day-latin">Biei → Furano</p>
+        <ul class="tags"><li class="tag" data-k="snow">看雪</li><li class="tag" data-k="night">夜景</li></ul>
+        <dl class="day-meta"><div><dt>住宿</dt><dd><a href="https://www.airbnb.com/rooms/1373613519386118362?check_in=2026-12-27&amp;check_out=2026-12-29&amp;adults=3">Vita（富良野站旁）</a> ★4.81 · 2 晚 ¥132,000，人均 ¥44,000</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>08:00</time><p>白须瀑布：冬天蓝色的水从冰里流出来。回旅馆泡早汤。</p></li>
+          <li><time>09:30</time><p>美瑛冬季巴士观光或包车：圣诞树之木、拼布之路、新荣之丘。</p></li>
+          <li><time>14:00</time><p>JR 富良野线 美瑛 → 富良野，约 40 分钟，入住。</p></li>
+          <li><time>16:30</time><p>打车 10 分钟去森林精灵露台 Ningle Terrace，雪林里亮着灯的小木屋手作店。</p></li>
+          <li><time>18:30</time><p>富良野市区吃咖喱蛋包饭，顺路去超市买第二天的早餐。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：美瑛到富良野">
+            <div class="tk-main"><span class="tk-kind">乗車券</span><p class="tk-route"><span>美瑛</span><i>→</i><span>富良野</span></p><p class="tk-sub">富良野線 · 約40分</p></div>
+            <div class="tk-stub"><b>≈¥750</b><span>D6 · 12.27</span></div>
+          </div>
+        </div>
+        <p class="note"><b>注意</b><span>美瑛的丘陵冬天坐公交很难到，不建议雪地自驾。包车约 ¥6,000–7,000/小时，3 人分摊。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d7" data-label="富良野" style="--tone:var(--tone-ski);--glow:var(--glow-ice)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">富良野</span>
+      <svg class="ridge" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V140L140 120L280 134L420 96L520 112L640 80L780 108L920 92L1060 118L1200 104V200Z" fill="var(--ridge)"/><path d="M0 200V170L180 158L360 172L540 156L740 170L940 158L1200 168V200Z" fill="var(--ridge-2)"/></svg>
+    </div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 07</b><span>/ 12</span><span>12.28 周一</span></p>
+        <h3 class="day-title">滑雪第一天，内陆的干粉雪</h3>
+        <p class="day-latin">Furano Ski Resort</p>
+        <ul class="tags"><li class="tag" data-k="ski">滑雪</li><li class="tag" data-k="food">美食</li></ul>
+        <dl class="day-meta"><div><dt>雪票</dt><dd>一日券约 ¥8,000（2025–26 季参考），官网买减 ¥500</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>08:30</time><p>打车约 5 分钟到富良野滑雪场北之峰区。</p></li>
+          <li><time>09:00</time><p>初学者上午上半天课，下午一起滑。粉雪干，排队短。</p></li>
+          <li><time>16:00</time><p>回程去便利店用宅急便把大件行李寄到二世谷的住处，年末可能慢一天，今天寄明天到。</p></li>
+          <li><time>晚上</time><p>在 Airbnb 自己做饭，或去市区居酒屋。</p></li>
+        </ol>
+        <p class="note"><b>缓冲</b><span>这天不换住处。前几天要是遇到暴风雪停运，可以把行程往这里挪。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d8" data-label="小樽 → 二世谷" style="--tone:var(--tone-harbor);--glow:var(--glow-lamp)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">小樽</span><span class="fx bokeh"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 08</b><span>/ 12</span><span>12.29 周二</span></p>
+        <h3 class="day-title">经小樽运河，傍晚住进二世谷的雪道旁</h3>
+        <p class="day-latin">Otaru → Niseko</p>
+        <ul class="tags"><li class="tag" data-k="food">美食</li><li class="tag" data-k="night">夜景</li><li class="tag" data-k="ski">滑雪</li></ul>
+        <dl class="day-meta">
+          <div><dt>住宿</dt><dd><a href="https://www.booking.com/hotel/jp/the-freshwater-kutchan.zh-cn.html?checkin=2026-12-29&amp;checkout=2027-01-01&amp;group_adults=3">The Freshwater 清水酒店</a>（Booking）2 卧 2 卫带厨房，离比罗夫缆车 0.7 km · 3 晚 ¥536,921，人均约 ¥179,000</dd></div>
+          <div><dt>采购</dt><dd>新年期间很多店休息，今天在超市把跨年的食材买齐</dd></div>
+        </dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>08:30</time><p>富良野 → 泷川 → 札幌，约 2 小时。</p></li>
+          <li><time>11:30</time><p>快速列车 札幌 → 小樽，约 35 分钟。</p></li>
+          <li><time>12:00</time><p>小樽运河的煤气灯，堺町通（北一硝子、音乐盒堂、LeTAO），寿司屋通吃午饭。</p></li>
+          <li><time>15:30</time><p>小樽 → 俱知安，普通车约 1 小时 20 分；打车 10 分钟到比罗夫。</p></li>
+          <li><time>19:00</time><p>想动一动就走去 Grand Hirafu 夜滑，灯光雪道开到 20:30 左右。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：富良野经札幌、小樽到俱知安">
+            <div class="tk-main"><span class="tk-kind">乗車券 · 特急券</span><p class="tk-route"><span>富良野</span><i>→</i><span>小樽</span><i>→</i><span>倶知安</span></p><p class="tk-sub">普通 + 特急 + 快速 · 約5h</p></div>
+            <div class="tk-stub"><b>≈¥6,500</b><span>D8 · 12.29</span></div>
+          </div>
+        </div>
+        <p class="note"><b>注意</b><span>今天坐车时间最长，大件行李前一天已经寄走，只背滑雪用品和随身包。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d9" data-label="二世谷" style="--tone:var(--tone-ski);--glow:var(--glow-ice)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">ニセコ</span>
+      <svg class="ridge" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V150L160 132L300 146L460 120L600 18L740 120L900 140L1040 128L1200 142V200Z" fill="var(--ridge)"/><path d="M0 200V172L200 160L380 176L560 158L760 172L960 160L1200 170V200Z" fill="var(--ridge-2)"/></svg>
+    </div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 09</b><span>/ 12</span><span>12.30 周三</span></p>
+        <h3 class="day-title">出门走几分钟就上缆车，看着羊蹄山下坡</h3>
+        <p class="day-latin">Niseko United</p>
+        <ul class="tags"><li class="tag" data-k="ski">滑雪</li><li class="tag" data-k="onsen">温泉</li></ul>
+        <dl class="day-meta">
+          <div><dt>雪票</dt><dd>All Mountain 一日券旺季 ¥13,500（12/24 起），多日券只能连续用，含四个雪场之间的接驳巴士</dd></div>
+          <div><dt>寄行李</dt><dd>今天把大件行李寄到登别的旅馆（先跟旅馆确认能代收），元旦只带滑雪用品</dd></div>
+        </dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>08:30</time><p>走到 Grand Hirafu 上山。</p></li>
+          <li><time>09:00</time><p>初学者上午半天课，其他人去 Hanazono 找粉雪。</p></li>
+          <li><time>12:00</time><p>山上餐厅午饭，天晴能看到「虾夷富士」羊蹄山。</p></li>
+          <li><time>下午</time><p>树林区只从开放的 Gate 进入，遵守 Niseko Rules，那里有雪崩风险。</p></li>
+          <li><time>晚上</time><p>比罗夫村的居酒屋，然后泡日归温泉。</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d10" data-label="二世谷 · 跨年" style="--tone:var(--tone-ski);--glow:var(--glow-ember)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">大晦日</span><span class="fx bokeh"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 10</b><span>/ 12</span><span>12.31 周四 · 跨年夜</span></p>
+        <h3 class="day-title">滑完最后一天，在雪场看零点烟火</h3>
+        <p class="day-latin">Niseko · New Year's Eve</p>
+        <ul class="tags"><li class="tag" data-k="ski">滑雪</li><li class="tag" data-k="xmas">跨年</li><li class="tag" data-k="food">美食</li></ul>
+        <dl class="day-meta">
+          <div><dt>不滑雪</dt><dd>雪地摩托、雪鞋徒步、狗拉雪橇</dd></div>
+          <div><dt>跨年活动</dt><dd>2026–27 季还没公布。去年 Hirafu 零点有火把滑降，Hanazono 和 Annupuri 有零点烟火</dd></div>
+        </dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>09:00</time><p>坐接驳巴士去 Niseko Village 或 Annupuri，换一边的雪道。</p></li>
+          <li><time>16:00</time><p>回住处，用厨房煮跨年荞麦面（年越しそば），或者去提前订好的餐厅。</p></li>
+          <li><time>22:30</time><p>穿暖和，走到 Grand Hirafu 山脚等零点。</p></li>
+          <li><time>00:00</time><p>火把滑降和烟火，一起倒数进入 2027。</p></li>
+        </ol>
+        <p class="note"><b>注意</b><span>零点前后几乎没有巴士和出租车。住在雪道旁，走回去只要几分钟。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d11" data-label="留寿都 → 登别 · 元旦" style="--tone:var(--tone-hell);--glow:var(--glow-ember)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">元旦</span><span class="fx steam"></span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 11</b><span>/ 12</span><span>1.01 周五 · 元旦</span></p>
+        <h3 class="day-title">用 Epic 在留寿都滑新年第一场，晚上泡温泉吃新年料理</h3>
+        <p class="day-latin">Rusutsu → Noboribetsu</p>
+        <ul class="tags"><li class="tag" data-k="ski">滑雪</li><li class="tag" data-k="onsen">温泉</li><li class="tag" data-k="food">美食</li></ul>
+        <dl class="day-meta">
+          <div><dt>雪票</dt><dd>你的 Epic Pass 在留寿都有连续 5 天、没有封锁日；同伴买一日券（2026–27 窗口价 ¥16,700，官网提前买更便宜）</dd></div>
+          <div><dt>住宿</dt><dd>登别温泉旅馆，3 人和室 · 元旦新年价，人均约 ¥30,000–50,000</dd></div>
+        </dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>08:30</time><p>退房，提前约好的出租车从比罗夫开到留寿都，约 45 分钟。</p></li>
+          <li><time>09:30</time><p>带上实体 Epic 卡和带照片的证件，在留寿都售票窗口换票，滑到午后。</p></li>
+          <li><time>午后</time><p>坐北海道 Resort Liner 巴士 留寿都 → 登别温泉（需预约，班次以 2026–27 公布为准）。</p></li>
+          <li><time>17:00</time><p>入住，傍晚走去地狱谷的灯光步道。</p></li>
+          <li><time>19:00</time><p>旅馆的新年料理，温泉街的汤泽神社可以顺便新年参拜。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：留寿都到登别温泉">
+            <div class="tk-main"><span class="tk-kind">バス</span><p class="tk-route"><span>ルスツ</span><i>→</i><span>登別温泉</span></p><p class="tk-sub">北海道リゾートライナー · 要予約</p></div>
+            <div class="tk-stub"><b>巴士</b><span>D11 · 1.01</span></div>
+          </div>
+        </div>
+        <p class="note"><b>注意</b><span>12 月下旬二世谷到留寿都的接驳车还没开（往年 1/3 起），所以早上打车。出租车元旦很难临时叫，提前约。</span></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day" id="d12" data-label="新千岁 · 回程" style="--tone:var(--tone-city);--glow:var(--glow-lamp)">
+  <div class="day-card">
+    <div class="day-bg" aria-hidden="true"><span class="day-ja">千歳</span></div>
+    <div class="wrap day-in">
+      <header class="day-head">
+        <p class="day-no"><b>DAY 12</b><span>/ 12</span><span>1.02 周六</span></p>
+        <h3 class="day-title">最后一次泡汤，带着伴手礼回家</h3>
+        <p class="day-latin">New Chitose Airport</p>
+        <ul class="tags"><li class="tag" data-k="onsen">温泉</li><li class="tag" data-k="food">美食</li></ul>
+        <dl class="day-meta"><div><dt>伴手礼</dt><dd>白色恋人、ROYCE 生巧、六花亭、LeTAO</dd></div></dl>
+      </header>
+      <div class="day-body">
+        <ol class="sched">
+          <li><time>07:00</time><p>大汤沼或地狱谷的晨雾，最后泡一次。</p></li>
+          <li><time>10:00</time><p>直达巴士到新千岁机场，约 1 小时。</p></li>
+          <li><time>11:00</time><p>机场拉面道场、ROYCE 巧克力工厂，办免税。</p></li>
+          <li><time>下午</time><p>国际航班。1/2 是日本新年返程高峰的开始，至少提前 3 小时到机场。</p></li>
+        </ol>
+        <div class="tickets">
+          <div class="ticket" role="group" aria-label="车票：登别温泉到新千岁机场">
+            <div class="tk-main"><span class="tk-kind">バス</span><p class="tk-route"><span>登別温泉</span><i>→</i><span>新千歳空港</span></p><p class="tk-sub">直行バス · 約1h</p></div>
+            <div class="tk-stub"><b>≈¥1,500</b><span>D12 · 1.02</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+</div>
+
+<section class="sec" id="stays">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Stays · 3 人 · 整套房源</p>
+      <h2>住在哪</h2>
+      <p>城市和雪场住整套房源，情侣和朋友各有一间卧室；温泉乡住旅馆和室。价格是 2026-10-30 搜索页显示的这几晚总价，人均按 3 人平摊，以下单页为准。<b style="color:var(--lamp);font-weight:500">首选</b>是攻略按的那一套。</p>
+    </div>
+    <div class="stays">
+      <article class="stay">
+        <div class="stay-top"><h3>二世谷</h3><span class="s-when">12/29–1/1 · 3 晚 · 跨年</span></div>
+        <ul class="opts">
+          <li><a href="https://www.booking.com/hotel/jp/the-freshwater-kutchan.zh-cn.html?checkin=2026-12-29&amp;checkout=2027-01-01&amp;group_adults=3"><span class="pick">首选</span>The Freshwater 清水酒店<span class="plat">Booking</span></a><span class="meta">9.1 分（64）· <b>¥536,921</b> · 人均 ¥179,000</span><span class="why">离比罗夫缆车 0.7 km，位置评分 9.6；2 卧 2 卫，带厨房，76 ㎡，4 张单人床</span></li>
+          <li><a href="https://www.booking.com/hotel/jp/forest-estate.zh-cn.html?checkin=2026-12-29&amp;checkout=2027-01-01&amp;group_adults=3">Forest Estate 森林庄园<span class="plat">Booking</span></a><span class="meta">9.4 分（16）· <b>¥604,513</b> · 人均 ¥201,500</span><span class="why">离缆车 0.9 km；3 卧 2 卫，140 ㎡，每人一间（Airbnb 上同一套要 ¥683,100）</span></li>
+          <li><a href="https://www.booking.com/hotel/jp/chatrium-niseko.zh-cn.html?checkin=2026-12-29&amp;checkout=2027-01-01&amp;group_adults=3">察殿 Chatrium Niseko<span class="plat">Booking</span></a><span class="meta">9.1 分（263）· <b>¥1,003,894</b> · 人均 ¥334,600</span><span class="why">离缆车 0.6 km 的酒店套房，2 卧 2 卫，服务最全，也最贵</span></li>
+          <li><a href="https://www.airbnb.com/rooms/1598529082193644057?check_in=2026-12-29&amp;check_out=2027-01-01&amp;adults=3">Niseko Town Retreat<span class="plat">Airbnb</span></a><span class="meta">★4.92（52）· <b>¥382,700</b> · 人均 ¥127,600</span><span class="why">省钱选择：在俱知安镇上，巴士约 15 分钟到雪场，跨年夜回去不方便</span></li>
+        </ul>
+        <p class="stay-note">比罗夫村里的 Airbnb 跨年档基本订满，剩下的不是只有 1 间卧室就是离雪道远，所以首选换成了 Booking 上的公寓式酒店。</p>
+      </article>
+      <article class="stay">
+        <div class="stay-top"><h3>富良野</h3><span class="s-when">12/27–12/29 · 2 晚</span></div>
+        <ul class="opts">
+          <li><a href="https://www.airbnb.com/rooms/1373613519386118362?check_in=2026-12-27&amp;check_out=2026-12-29&amp;adults=3"><span class="pick">首选</span>Vita · 富良野站旁<span class="plat">Airbnb</span></a><span class="meta">★4.81（36）· <b>¥132,000</b> · 人均 ¥44,000</span><span class="why">2 卧，4 张 1.35 m 双人床；车站旁吃饭方便，打车 5 分钟到雪场</span></li>
+          <li><a href="https://www.airbnb.com/rooms/44407613?check_in=2026-12-27&amp;check_out=2026-12-29&amp;adults=3">Furano House 1 楼 · 2 卧<span class="plat">Airbnb</span></a><span class="meta">★4.81（79）· <b>¥78,600</b> · 人均 ¥26,200</span><span class="why">性价比最高，评价说位置好</span></li>
+          <li><a href="https://www.airbnb.com/rooms/44361595?check_in=2026-12-27&amp;check_out=2026-12-29&amp;adults=3">Furano House 2 楼 · 3 卧<span class="plat">Airbnb</span></a><span class="meta">★4.76（42）· <b>¥93,843</b> · 人均 ¥31,300</span><span class="why">3 间卧室，每人一间</span></li>
+        </ul>
+      </article>
+      <article class="stay">
+        <div class="stay-top"><h3>札幌</h3><span class="s-when">12/25 · 1 晚 · 圣诞节</span></div>
+        <ul class="opts">
+          <li><a href="https://www.airbnb.com/rooms/1572053407937060082?check_in=2026-12-25&amp;check_out=2026-12-26&amp;adults=3"><span class="pick">首选</span>Altiplano<span class="plat">Airbnb</span></a><span class="meta">★4.98（124）· <b>¥60,000</b> · 人均 ¥20,000</span><span class="why">紧挨二条市场，第二天早上走过去吃海鲜早餐</span></li>
+          <li><a href="https://www.airbnb.com/rooms/42567092?check_in=2026-12-25&amp;check_out=2026-12-26&amp;adults=3">R1 · 带私人天然温泉<span class="plat">Airbnb</span></a><span class="meta">★4.85（161）· <b>¥75,350</b> · 人均 ¥25,100</span><span class="why">中岛公园站步行 5 分钟，房间里有温泉浴池</span></li>
+          <li><a href="https://www.airbnb.com/rooms/1629652726294596653?check_in=2026-12-25&amp;check_out=2026-12-26&amp;adults=3">DAITO residence<span class="plat">Airbnb</span></a><span class="meta">★4.98（235）· <b>¥40,000</b> · 人均 ¥13,300</span><span class="why">大通西侧，走路去圣诞市集</span></li>
+        </ul>
+      </article>
+      <article class="stay">
+        <div class="stay-top"><h3>函馆</h3><span class="s-when">12/24 · 1 晚 · 平安夜</span></div>
+        <ul class="opts">
+          <li><a href="https://www.airbnb.com/rooms/1201682282296980063?check_in=2026-12-24&amp;check_out=2026-12-25&amp;adults=3"><span class="pick">首选</span>箱街懐宿·橙葵 古民家<span class="plat">Airbnb</span></a><span class="meta">★4.98（159）· <b>¥22,600</b> · 人均 ¥7,500</span><span class="why">日式老房子改造，睡榻榻米铺被</span></li>
+          <li><a href="https://www.airbnb.com/rooms/1247198962218833274?check_in=2026-12-24&amp;check_out=2026-12-25&amp;adults=3">私人日式艺术住宅 · 3 卧<span class="plat">Airbnb</span></a><span class="meta">★4.9（77）· <b>约 ¥63,000</b> · 人均约 ¥21,000</span><span class="why">3 间卧室都是 1.35 m 双人床，不用睡地铺</span></li>
+          <li><a href="https://www.airbnb.com/rooms/50332059?check_in=2026-12-24&amp;check_out=2026-12-25&amp;adults=3">箱街懐宿·大正館<span class="plat">Airbnb</span></a><span class="meta">★4.86（212）· <b>¥19,000</b> · 人均 ¥6,300</span><span class="why">同一家经营，大正浪漫风</span></li>
+        </ul>
+      </article>
+      <article class="stay">
+        <div class="stay-top"><h3>东京</h3><span class="s-when">12/22 · 1 晚</span></div>
+        <ul class="opts">
+          <li><a href="https://www.airbnb.com/rooms/1606974340275488529?check_in=2026-12-22&amp;check_out=2026-12-23&amp;adults=3"><span class="pick">首选</span>上野·浅草宽敞日式大房<span class="plat">Airbnb</span></a><span class="meta">★4.92（178）· <b>¥36,732</b> · 人均 ¥12,200</span><span class="why">第二天在上野站坐新干线，可以寄存行李</span></li>
+          <li><a href="https://www.airbnb.com/rooms/1101246591406869666?check_in=2026-12-22&amp;check_out=2026-12-23&amp;adults=3">Nikaido Sky Terrace<span class="plat">Airbnb</span></a><span class="meta">★4.99（126）· <b>约 ¥41,000</b> · 人均约 ¥13,700</span><span class="why">新建独栋，露台看晴空塔，有地铁直达机场</span></li>
+          <li><a href="https://www.airbnb.com/rooms/1406434522824880970?check_in=2026-12-22&amp;check_out=2026-12-23&amp;adults=3">浅草桥 501<span class="plat">Airbnb</span></a><span class="meta">★4.98（55）· 价格见链接</span><span class="why">浅草桥站步行 4 分钟，成田、羽田直达</span></li>
+        </ul>
+      </article>
+      <article class="stay">
+        <div class="stay-top"><h3>温泉旅馆</h3><span class="s-when">3 晚 · 3 人和室 · 含两餐</span></div>
+        <ul class="opts">
+          <li><span class="why" style="color:var(--snow)">12/23 · 八甲田</span><span class="meta"><b>酸ヶ汤温泉旅馆</b></span><span class="why">山里只有这一家，千人风呂就在馆内</span></li>
+          <li><span class="why" style="color:var(--snow)">12/26 · 白金温泉</span><span class="meta"><b>森之旅亭美瑛</b> / <b>汤元白金温泉酒店</b></span><span class="why">前者高档，有带房内温泉的房型；后者实惠</span></li>
+          <li><span class="why" style="color:var(--snow)">1/1 元旦 · 登别</span><span class="meta"><b>第一泷本馆</b> / <b>泷乃家</b> / <b>望楼 NOGUCHI</b></span><span class="why">第一泷本馆浴场最大；后两家高档。元旦夜是新年价，要早订，并确认能代收寄来的行李</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ski">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Ski · 3.5 days · 3 resorts</p>
+      <h2>三座雪场</h2>
+      <p>先在富良野滑 1 天，再在二世谷滑 2 天多，元旦用你的 Epic Pass 在留寿都滑半天。Epic 在日本的另一个合作雪场是长野的白马，不在这次路线上。</p>
+    </div>
+    <div class="ski">
+      <article class="resort">
+        <header><span class="r-when">D7</span><h3>富良野</h3><span class="r-latin">Furano</span></header>
+        <dl>
+          <div><dt>雪质</dt><dd>内陆更冷，粉雪更干更轻</dd></div>
+          <div><dt>一日券</dt><dd>约 ¥8,000（2025–26 季参考），官网买减 ¥500</dd></div>
+          <div><dt>人流</dt><dd>少，排队短</dd></div>
+          <div><dt>开季</dt><dd>11/28 开季，北之峰区 12 月下旬开放</dd></div>
+          <div><dt>适合</dt><dd>初中级练长滑道</dd></div>
+        </dl>
+      </article>
+      <article class="resort">
+        <header><span class="r-when">D8 夜滑 · D9 · D10</span><h3>二世谷联合</h3><span class="r-latin">Niseko United</span></header>
+        <dl>
+          <div><dt>雪质</dt><dd>降雪量大的粉雪，树林道有名</dd></div>
+          <div><dt>一日券</dt><dd>旺季 ¥13,500（12/24 起，四个雪场通用，含接驳巴士）</dd></div>
+          <div><dt>人流</dt><dd>国际游客多，圣诞到新年最挤</dd></div>
+          <div><dt>夜滑</dt><dd>Grand Hirafu 有灯光雪道</dd></div>
+          <div><dt>适合</dt><dd>各种水平；树林区只走开放的 Gate</dd></div>
+        </dl>
+      </article>
+      <article class="resort epic">
+        <header><span class="r-when">D11 上午 · Epic Pass</span><h3>留寿都</h3><span class="r-latin">Rusutsu</span></header>
+        <dl>
+          <div><dt>Epic</dt><dd>连续 5 天，没有封锁日；带实体 Epic 卡和带照片的证件去售票窗口换票</dd></div>
+          <div><dt>同伴</dt><dd>一日券 2026–27 窗口价 ¥16,700，官网提前买更便宜</dd></div>
+          <div><dt>雪质</dt><dd>粉雪和树林道很有名，比二世谷人少</dd></div>
+          <div><dt>交通</dt><dd>二世谷接驳车往年 1/3 才开，元旦早上打车约 45 分钟；札幌有免费巴士 Rusutsu-Go，约 2 小时</dd></div>
+          <div><dt>跨年</dt><dd>往年有 1,200 发烟火和火把游行，免费看。想在这里跨年可以把 12/31 改住留寿都</dd></div>
+        </dl>
+      </article>
+    </div>
+    <h3 class="sub">滑雪准备</h3>
+    <ul class="prep">
+      <li><b>提前订雪具</b><span>线上提前 48 小时预订常有 9 折。二世谷标准套装约 ¥9,500/天，雪服另租。</span></li>
+      <li><b>初学者先上课</b><span>上午半天团体课约 ¥12,000，下午一起练。</span></li>
+      <li><b>头盔要租</b><span>粉雪下面可能有树根和硬冰。</span></li>
+      <li><b>保险含滑雪</b><span>买包含滑雪受伤和救援的旅行保险，二世谷的救援和医疗费很高。</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="calendar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">December – January · 12.22 – 1.02</p>
+      <h2>年末年初的北海道</h2>
+      <p>这几天里哪些活动在办、哪些价格会变、哪些地方休息。★ 是行程里会去的那一天。手机上可以左右滑动。</p>
+    </div>
+    <div class="cal-wrap">
+      <div class="cal" role="table" aria-label="12 月 22 日到 1 月 2 日的活动日历">
+        <div class="cal-row cal-head" role="row">
+          <span class="cal-lbl" role="columnheader">日期</span>
+          <span class="cal-d" role="columnheader"><b>22</b>二</span><span class="cal-d" role="columnheader"><b>23</b>三</span><span class="cal-d" role="columnheader"><b>24</b>四</span><span class="cal-d" role="columnheader"><b>25</b>五</span><span class="cal-d we" role="columnheader"><b>26</b>六</span><span class="cal-d we" role="columnheader"><b>27</b>日</span><span class="cal-d" role="columnheader"><b>28</b>一</span><span class="cal-d" role="columnheader"><b>29</b>二</span><span class="cal-d" role="columnheader"><b>30</b>三</span><span class="cal-d" role="columnheader"><b>31</b>四</span><span class="cal-d we" role="columnheader"><b>1/1</b>五</span><span class="cal-d we" role="columnheader"><b>1/2</b>六</span>
+        </div>
+        <div class="cal-row cal-where" role="row">
+          <span class="cal-lbl" role="rowheader">我们在哪</span>
+          <span>东京</span><span>酸汤</span><span>函馆</span><span>札幌</span><span>旭川<br>白金</span><span>美瑛<br>富良野</span><span>富良野</span><span>小樽<br>二世谷</span><span>二世谷</span><span>二世谷</span><span>留寿都<br>登别</span><span>回程</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">函馆圣诞幻想节<small>12/1 起</small></span>
+          <span class="bar cont" style="grid-column:2 / 6;--bc:var(--ember)">到 12/25</span>
+          <span class="star" style="grid-column:4" aria-label="12/24 前往">★</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">札幌圣诞市集 · 大通灯饰<small>11/20 起</small></span>
+          <span class="bar cont" style="grid-column:2 / 6;--bc:var(--ember)">到 12/25</span>
+          <span class="star" style="grid-column:5" aria-label="12/25 前往">★</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">旭山动物园企鹅散步</span>
+          <span class="bar dash" style="grid-column:2 / 10;--bc:var(--ice)">积雪后开始，往年 12 月下旬</span>
+          <span class="star" style="grid-column:6" aria-label="12/26 前往">★</span>
+          <span class="off" style="grid-column:10 / 13">休园 12/30–1/1</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">白金青池点灯</span>
+          <span class="bar" style="grid-column:2 / 14;--bc:var(--ice)">整个冬季，日落到 21:00</span>
+          <span class="star" style="grid-column:6" aria-label="12/26 前往">★</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">二世谷雪票旺季价</span>
+          <span class="bar" style="grid-column:4 / 14;--bc:var(--c-ski)">12/24 起 ¥13,500</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">雪场跨年烟火<small>往年，2026–27 待公布</small></span>
+          <span class="bar" style="grid-column:11 / 12;--bc:var(--ember)"></span>
+          <span class="star" style="grid-column:11" aria-label="12/31 前往">★</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">很多餐厅商店休息</span>
+          <span class="bar" style="grid-column:11 / 14;--bc:var(--lamp)">12/31 起，到 1/3 前后</span>
+        </div>
+        <div class="cal-row" role="row">
+          <span class="cal-lbl" role="rowheader">日本年末年初出行高峰</span>
+          <span class="bar" style="grid-column:9 / 14;--bc:var(--lamp)">12/29 起，返程高峰到 1/4 前后</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="budget">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Budget · 人均 · 日本境内</p>
+      <h2>钱花在哪</h2>
+      <p>按 3 人同住、上面的首选房源估算，国际机票另算。汇率按 1 元人民币 ≈ 23 日元。</p>
+    </div>
+    <div class="budget-total"><b>¥630,000</b><span>约 2.7 万元人民币 / 人</span></div>
+    <div class="stack" role="img" aria-label="预算构成：住宿 55.6%，滑雪 13.5%，交通 12.7%，餐饮 12.7%，杂项 3.2%，门票 2.4%">
+      <span style="flex:350;--bc:var(--lamp)"></span><span style="flex:85;--bc:var(--c-ski)"></span><span style="flex:80;--bc:var(--ice)"></span><span style="flex:80;--bc:var(--ember)"></span><span style="flex:20;--bc:var(--frost)"></span><span style="flex:15;--bc:var(--c-mint)"></span>
+    </div>
+    <ul class="legend">
+      <li style="--bc:var(--lamp)"><i></i><span>住宿 11 晚<small>二世谷雪道旁跨年 3 晚人均约 ¥179,000</small></span><span class="amt">¥350,000<small>≈15,200 元</small></span></li>
+      <li style="--bc:var(--c-ski)"><i></i><span>滑雪<small>雪票（你在留寿都免费）、雪具雪服、半天课</small></span><span class="amt">¥85,000<small>≈3,700 元</small></span></li>
+      <li style="--bc:var(--ice)"><i></i><span>交通<small>铁路、巴士、美瑛观光、元旦打车</small></span><span class="amt">¥80,000<small>≈3,500 元</small></span></li>
+      <li style="--bc:var(--ember)"><i></i><span>餐饮<small>旅馆两餐已算进住宿，二世谷可以自己做饭</small></span><span class="amt">¥80,000<small>≈3,500 元</small></span></li>
+      <li style="--bc:var(--frost)"><i></i><span>杂项<small>eSIM、行李寄送、住宿税、出境税</small></span><span class="amt">¥20,000<small>≈870 元</small></span></li>
+      <li style="--bc:var(--c-mint)"><i></i><span>门票与体验<small>缆车、动物园、日归温泉</small></span><span class="amt">¥15,000<small>≈650 元</small></span></li>
+    </ul>
+
+    <h3 class="sub">三种预算档</h3>
+    <div class="hbars" role="list">
+      <div class="hbar" role="listitem"><span>经济型<small class="d">二世谷住俱知安镇上</small></span><div class="track"><div class="fill" style="width:54.4%;--bc:var(--ice)"></div></div><span class="val">¥490,000<small>≈2.1 万元</small></span></div>
+      <div class="hbar" role="listitem"><span>舒适型<small class="d">本攻略的安排</small></span><div class="track"><div class="fill" style="width:70%;--bc:var(--lamp)"></div></div><span class="val">¥630,000<small>≈2.7 万元</small></span></div>
+      <div class="hbar" role="listitem"><span>品质型<small class="d">雪道旁酒店套房、高档旅馆</small></span><div class="track"><div class="fill" style="width:100%;--bc:var(--ember)"></div></div><span class="val">¥900,000+<small>≈3.9 万元起</small></span></div>
+    </div>
+
+    <h3 class="sub">JR 通票划不划算</h3>
+    <div class="pass-grp">
+      <h4>前半段：东京 → 青森 → 函馆 → 札幌（12/23–12/25）</h4>
+      <div class="hbars">
+        <div class="hbar"><span>单程票合计</span><div class="track"><div class="fill" style="width:88%;--bc:var(--c-mint)"></div></div><span class="val">≈¥35,200</span></div>
+        <div class="hbar"><span>东日本·南北海道周游券</span><div class="track"><div class="fill" style="width:100%;--bc:var(--frost)"></div></div><span class="val">¥40,000<small>连续 6 天</small></span></div>
+      </div>
+    </div>
+    <div class="pass-grp">
+      <h4>后半段 JR：札幌 → 旭川，美瑛 → 富良野 → 小樽 → 俱知安</h4>
+      <div class="hbars">
+        <div class="hbar"><span>单程票合计</span><div class="track"><div class="fill" style="width:31%;--bc:var(--c-mint)"></div></div><span class="val">≈¥12,500</span></div>
+        <div class="hbar"><span>北海道周游券 5 日</span><div class="track"><div class="fill" style="width:55%;--bc:var(--frost)"></div></div><span class="val">¥22,000</span></div>
+      </div>
+    </div>
+    <p class="fine">两段都是单程票更便宜。酸汤、白金、留寿都到登别的巴士不在任何 JR 通票里。2026 年 3 月 14 日起 JR 北海道的特急全车指定席，要先订座。</p>
+  </div>
+</section>
+
+<section class="sec" id="weather">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Weather · 12 月下旬至元旦</p>
+      <h2>有多冷</h2>
+      <p>往年这段时间的平均最低和最高气温（°C），山上和清晨还会更低。下午 4 点左右天就黑了。</p>
+    </div>
+    <div class="temps" role="list">
+      <div class="trow" role="listitem"><span>东京</span><div class="tscale"><span class="trange" data-lo="3°" data-hi="12°" style="left:60%;width:30%"></span></div></div>
+      <div class="trow" role="listitem"><span>酸汤温泉<small>海拔约 900 m</small></span><div class="tscale"><span class="trange" data-lo="-9°" data-hi="-3°" style="left:20%;width:20%"></span></div></div>
+      <div class="trow" role="listitem"><span>函馆</span><div class="tscale"><span class="trange" data-lo="-4°" data-hi="2°" style="left:36.67%;width:20%"></span></div></div>
+      <div class="trow" role="listitem"><span>札幌 · 小樽</span><div class="tscale"><span class="trange" data-lo="-7°" data-hi="-1°" style="left:26.67%;width:20%"></span></div></div>
+      <div class="trow" role="listitem"><span>旭川</span><div class="tscale"><span class="trange" data-lo="-12°" data-hi="-4°" style="left:10%;width:26.67%"></span></div></div>
+      <div class="trow" role="listitem"><span>美瑛 · 富良野</span><div class="tscale"><span class="trange" data-lo="-13°" data-hi="-4°" style="left:6.67%;width:30%"></span></div></div>
+      <div class="trow" role="listitem"><span>二世谷 · 留寿都<small>山顶 -12° 以下</small></span><div class="tscale"><span class="trange" data-lo="-9°" data-hi="-2°" style="left:20%;width:23.33%"></span></div></div>
+      <div class="trow" role="listitem"><span>登别</span><div class="tscale"><span class="trange" data-lo="-7°" data-hi="-1°" style="left:26.67%;width:20%"></span></div></div>
+      <div class="trow" aria-hidden="true"><span></span><div class="taxis"><span style="left:0">-15</span><span style="left:16.67%">-10</span><span style="left:33.33%">-5</span><span style="left:50%">0</span><span style="left:66.67%">5</span><span style="left:83.33%">10</span><span style="left:100%">15</span></div></div>
+    </div>
+    <ul class="pack">
+      <li><b>三层穿法</b><span>速干内层、抓绒或羽绒中层、防风防水外层。室内暖气很足，方便脱。</span></li>
+      <li><b>跨年夜加一层</b><span>零点在雪场山脚站一小时，暖宝宝、厚袜子、帽子和手套都要。</span></li>
+      <li><b>防滑鞋套</b><span>函馆和札幌的坡道结冰，便利店就能买到。</span></li>
+      <li><b>雪镜和面罩</b><span>山上风雪打脸，没有雪镜看不清雪面。</span></li>
+      <li><b>充电宝</b><span>低温下手机掉电很快，贴身放。</span></li>
+      <li><b>保湿</b><span>室内暖气干燥，润唇膏和面霜要带够。</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="checklist">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Booking · 按紧急程度</p>
+      <h2>预订清单</h2>
+      <p>勾选只保存在你自己的浏览器里，别人打开这个页面看不到你的进度。</p>
+    </div>
+    <div class="chk-top"><span class="chk-count">已完成 <b id="chkDone">0</b> / <span id="chkAll">13</span></span></div>
+    <ul class="chk">
+      <li><label><input type="checkbox" id="c-niseko"><span class="ct">二世谷雪道旁住宿 3 晚<small>12/29–1/1 跨年档，房源最少</small></span><span class="when" data-u="now">立即</span></label></li>
+      <li><label><input type="checkbox" id="c-flight"><span class="ct">国际机票：12/22 到东京，1/2 从札幌回<small>2026 年中日航线减班多，从中国大陆出发要早订</small></span><span class="when" data-u="now">立即</span></label></li>
+      <li><label><input type="checkbox" id="c-ryokan"><span class="ct">酸汤、白金、登别三家温泉旅馆<small>3 人和室；元旦夜是新年价</small></span><span class="when" data-u="now">立即</span></label></li>
+      <li><label><input type="checkbox" id="c-airbnb"><span class="ct">东京、函馆、札幌、富良野的 Airbnb</span><span class="when" data-u="nov">11 月内</span></label></li>
+      <li><label><input type="checkbox" id="c-dinner"><span class="ct">平安夜（函馆）和跨年夜（二世谷）的晚餐<small>或者跨年在住处自己做</small></span><span class="when" data-u="nov">11 月内</span></label></li>
+      <li><label><input type="checkbox" id="c-rental"><span class="ct">雪具雪服租赁 + 半天滑雪课</span><span class="when" data-u="nov">11 月内</span></label></li>
+      <li><label><input type="checkbox" id="c-ins"><span class="ct">旅行保险<small>要包含滑雪受伤和救援</small></span><span class="when" data-u="nov">11 月内</span></label></li>
+      <li><label><input type="checkbox" id="c-epic"><span class="ct">同伴的留寿都一日券<small>官网提前买比窗口便宜；你带实体 Epic 卡和带照片的证件</small></span><span class="when" data-u="month">出发前 1 个月</span></label></li>
+      <li><label><input type="checkbox" id="c-rail"><span class="ct">新干线和 JR 北海道特急指定席<small>乘车日前 1 个月开售</small></span><span class="when" data-u="month">出发前 1 个月</span></label></li>
+      <li><label><input type="checkbox" id="c-bus"><span class="ct">1/1 的出租车（比罗夫 → 留寿都）和 Resort Liner（留寿都 → 登别）</span><span class="when" data-u="month">出发前 1 个月</span></label></li>
+      <li><label><input type="checkbox" id="c-biei"><span class="ct">美瑛冬季巴士观光或包车</span><span class="when" data-u="month">出发前 1 个月</span></label></li>
+      <li><label><input type="checkbox" id="c-time"><span class="ct">核对时刻表，办 eSIM 和手机 Suica<small>山线、みずうみ号、道北巴士</small></span><span class="when" data-u="week">出发前 1 周</span></label></li>
+      <li><label><input type="checkbox" id="c-ship"><span class="ct">宅急便寄行李两次<small>12/28 富良野 → 二世谷；12/30 二世谷 → 登别旅馆</small></span><span class="when" data-u="week">行程中</span></label></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="tips">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Field notes</p>
+      <h2>出发前要知道的</h2>
+    </div>
+    <div class="tips">
+      <div class="tip"><h3>暴风雪会停运</h3><p>JR 北海道遇到暴风雪会整段停驶。D7、D9、D10 不换住处，可以当缓冲。每天出发前看「JR 北海道运行情报」。</p></div>
+      <div class="tip"><h3>新年店会关门</h3><p>12/31 到 1/3 很多餐厅和商店休息或提早关门，便利店照常。跨年的食材 12/29 就买好。</p></div>
+      <div class="tip"><h3>住 Airbnb 的规矩</h3><p>日本的民宿要登记护照，多是自助入住。垃圾要按规定分类，晚上 10 点后保持安静。</p></div>
+      <div class="tip"><h3>行李用宅急便寄</h3><p>在雪里拖箱子很累。便利店和酒店前台都能寄，每件约 ¥2,000–3,000；年末可能慢一天。</p></div>
+      <div class="tip"><h3>温泉礼仪</h3><p>先洗净再入池，毛巾不进水。有纹身先问店家。酸汤是混浴，女性可以选专用时段或穿汤浴着。</p></div>
+      <div class="tip"><h3>支付</h3><p>手机 Suica 和 Kitaca 在城市里基本通用，乡间巴士、出租车和小店要备现金。</p></div>
+      <div class="tip"><h3>税费</h3><p>北海道 2026/4/1 起收住宿税，按人按晚另付；出境税 2026/7/1 起涨到 ¥3,000。</p></div>
+      <div class="tip"><h3>机票</h3><p>2026 年中日航线大量减班，从中国大陆出发要早订，也可以经首尔或香港转机。1/2 是返程高峰的开始。</p></div>
+    </div>
+    <h3 class="sub">这个时间去，能看到什么</h3>
+    <div class="season">
+      <div class="yes"><h3>这次能赶上</h3><ul>
+        <li><span><b>函馆圣诞幻想节</b>，平安夜去，12/25 结束</span></li>
+        <li><span><b>札幌慕尼黑市集和白色灯树节</b>，圣诞节最后一晚</span></li>
+        <li><span><b>旭山企鹅散步</b>，看当年积雪</span></li>
+        <li><span><b>白金青池点灯</b>，整个冬季</span></li>
+        <li><span><b>雪场跨年</b>，往年有零点烟火和火把滑降</span></li>
+        <li><span><b>元旦温泉旅馆</b>，新年料理</span></li>
+      </ul></div>
+      <div class="no"><h3>这次赶不上</h3><ul>
+        <li><span><b>鄂霍次克海流冰</b>，1 月下旬起</span></li>
+        <li><span><b>札幌雪祭、小樽雪灯之路</b>，2 月</span></li>
+        <li><span><b>八甲田和藏王树冰</b>，1–2 月</span></li>
+        <li><span><b>TOMAMU 冰之教堂和冰酒店</b>，2027/1/20 起</span></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-mark">Yukiguni, northbound.</p>
+      <h3>规划假设</h3>
+      <p>3 位成人（一对情侣 + 1 位朋友），12/22 东京进、1/2 札幌新千岁出；城市和雪场住整套房源，温泉乡住旅馆；其中 1 人有 Epic Pass。价格和日期根据 2026-10-30 能查到的公开信息整理，标「约」或「参考」的以官网为准。汇率按 1 元人民币 ≈ 23 日元。</p>
+    </div>
+    <div>
+      <h3>主要来源</h3>
+      <ul>
+        <li><a href="https://www.jreast.co.jp/multi/en/pass/easthokkaido.html">JR 东日本·南北海道铁路周游券</a></li>
+        <li><a href="https://www.niseko.ne.jp/en/all-mountain-season-pass">二世谷联合雪票</a> · <a href="https://steep.jp/en/custom/hirafu-new-year">Hirafu 新年活动</a> · <a href="https://www.annupuri.info/en/news-list/news-detail.php?id=45">Annupuri 跨年烟火</a></li>
+        <li><a href="https://www.epicpass.com/regions/japan/rusutsu-resort.aspx">Epic Pass · 留寿都</a> · <a href="https://rusutsu.com/en/access-shuttle-bus-niseko">留寿都接驳车</a> · <a href="https://rusutsu.com/en/events/new-years-eve-fireworks/">留寿都跨年烟火</a></li>
+        <li><a href="https://www.trazy.com/experience/detail/noboribetsu-niseko-rusutsu-ski-resort-shuttle-bus">Resort Liner 登别 ⇄ 留寿都 · 二世谷</a></li>
+        <li><a href="https://japanactivity.com/hakodate-christmas-fantasy-and-winter-illuminations">函馆圣诞幻想节</a> · <a href="https://www.sapporo.travel/event/winter/munich_christmas_market/?lang=en">札幌慕尼黑圣诞市集</a></li>
+        <li><a href="https://activityjapan.com/product/22061">旭山动物园冬季开园</a> · <a href="https://www.biei-hokkaido.jp/ja/shirogane-blue-pond">白金青池</a></li>
+        <li><a href="https://www.travelvoice.jp/english/the-japanese-ruling-parties-specify-a-rise-in-departure-tax-to-3-000-yen-in-the-tax-reform-outline-for-fy2026">出境税调整</a> · <a href="https://aviationweek.com/air-transport/airports-networks/chinese-airlines-cut-japan-capacity-tensions-hit-schedules">中日航线减班</a></li>
+        <li>房源价格来自 Airbnb 和 Booking 搜索（2026-10-30）</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="dayind" id="dayind" aria-hidden="true"><b id="dayindNo">DAY 01 / 12</b><span id="dayindPlace">东京</span></div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGsap = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
+  var motion = hasGsap && !reduce;
+  var root = document.documentElement;
+  var tok = function(n){ return getComputedStyle(root).getPropertyValue(n).trim(); };
+
+  /* 倒计时 */
+  (function(){
+    var el = document.getElementById('cd'); if(!el) return;
+    var now = new Date(); var start = new Date(2026, 11, 22);
+    var d = Math.ceil((start - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
+    var box = el.parentNode;
+    if (d > 0) el.textContent = d;
+    else if (d > -12) box.innerHTML = '旅途中 · 第 <b>' + (1 - d) + '</b> 天';
+    else box.textContent = '这趟旅程已经结束';
+  })();
+
+  /* 路线图 */
+  var map = (function(){
+    var svg = document.getElementById('map'); if(!svg) return null;
+    var NS = 'http://www.w3.org/2000/svg';
+    var K = { lon0:139.3, lat0:44.5, kx:111.45, ky:150 };
+    function proj(p){ return [(p[0]-K.lon0)*K.kx, (K.lat0-p[1])*K.ky]; }
+    function mk(t, a, parent){ var e = document.createElementNS(NS, t); for (var k in a) e.setAttribute(k, a[k]); if (parent) parent.appendChild(e); return e; }
+    function f(n){ return n.toFixed(1); }
+    function curve(ll, closed){
+      var p = ll.map(proj), n = p.length;
+      function at(i){ return closed ? p[(i+n)%n] : p[Math.max(0, Math.min(n-1, i))]; }
+      var d = 'M' + f(p[0][0]) + ' ' + f(p[0][1]);
+      var segs = closed ? n : n-1;
+      for (var i=0; i<segs; i++){
+        var p0=at(i-1), p1=at(i), p2=at(i+1), p3=at(i+2);
+        d += 'C' + f(p1[0]+(p2[0]-p0[0])/6) + ' ' + f(p1[1]+(p2[1]-p0[1])/6) + ' ' + f(p2[0]-(p3[0]-p1[0])/6) + ' ' + f(p2[1]-(p3[1]-p1[1])/6) + ' ' + f(p2[0]) + ' ' + f(p2[1]);
+      }
+      return closed ? d + 'Z' : d;
+    }
+    var HOKKAIDO = [[141.72,44.75],[143.9,44.75],[143.9,42.6],[143.32,42.29],[143.25,41.93],[142.93,42.13],[142.77,42.17],[142.37,42.33],[141.93,42.57],[141.6,42.62],[141.35,42.55],[141.1,42.42],[140.95,42.3],[140.85,42.45],[140.72,42.58],[140.37,42.52],[140.28,42.25],[140.58,42.1],[140.82,42.03],[141.18,41.8],[141.0,41.73],[140.75,41.76],[140.65,41.82],[140.43,41.68],[140.3,41.5],[140.2,41.4],[140.08,41.44],[140.1,41.8],[140.12,41.9],[139.98,42.13],[139.85,42.45],[140.05,42.7],[140.23,42.79],[140.51,42.98],[140.43,43.13],[140.47,43.37],[140.78,43.2],[141.0,43.21],[141.15,43.15],[141.32,43.24],[141.42,43.4],[141.38,43.6],[141.52,43.85],[141.64,43.94],[141.7,44.1],[141.65,44.3]];
+    var HONSHU = [[139.95,40.0],[139.98,40.37],[139.93,40.65],[139.88,40.75],[140.2,40.78],[140.33,41.0],[140.3,41.13],[140.34,41.26],[140.45,41.18],[140.63,41.04],[140.74,40.83],[140.86,40.9],[140.88,41.05],[140.95,40.93],[141.13,40.87],[141.25,41.08],[141.18,41.27],[141.0,41.2],[140.8,41.14],[140.85,41.43],[140.92,41.53],[141.2,41.5],[141.46,41.43],[141.4,41.2],[141.4,40.95],[141.43,40.7],[141.52,40.53],[141.8,40.0]];
+    var OKUSHIRI = [[139.42,42.22],[139.52,42.2],[139.55,42.08],[139.45,42.05],[139.4,42.12]];
+    var ST = [
+      { id:'tokyo', entry:true, ll:[141.5,40.25] },
+      { id:'sukayu', zh:'酸汤温泉', ja:'酸ヶ湯', ll:[140.86,40.65], dx:10, dy:5 },
+      { id:'hakodate', zh:'函馆', ja:'函館', ll:[140.73,41.77], dx:10, dy:8 },
+      { id:'sapporo', zh:'札幌', ja:'札幌', ll:[141.35,43.06], dx:-10, dy:20, a:'end' },
+      { id:'asahikawa', zh:'旭川', ja:'旭川', ll:[142.36,43.77], dx:0, dy:-24, a:'middle' },
+      { id:'shirogane', zh:'白金温泉', ja:'白金', ll:[142.64,43.48], dx:10, dy:4 },
+      { id:'furano', zh:'富良野', ja:'富良野', ll:[142.38,43.34], dx:8, dy:20 },
+      { id:'otaru', zh:'小樽', ja:'小樽', ll:[141.00,43.19], dx:0, dy:-24, a:'middle' },
+      { id:'niseko', zh:'二世谷', ja:'ニセコ', ll:[140.70,42.86], dx:-10, dy:6, a:'end' },
+      { id:'rusutsu', zh:'留寿都', ja:'ルスツ', ll:[140.90,42.74], dx:10, dy:2 },
+      { id:'noboribetsu', zh:'登别', ja:'登別', ll:[141.10,42.49], dx:10, dy:18 },
+      { id:'cts', zh:'新千岁', ja:'新千歳', ll:[141.69,42.78], dx:10, dy:8 }
+    ];
+    var LEGS = [
+      { to:'sukayu', day:'D2', name:'东京 → 酸汤温泉', how:'隼号新干线 3h10m，JR 巴士约 100 分', pts:[[141.45,40.12],[141.49,40.51],[141.15,40.72],[140.69,40.83],[140.86,40.65]] },
+      { to:'hakodate', day:'D3', name:'酸汤 → 函馆', how:'北海道新干线穿过青函隧道，约 1h', pts:[[140.86,40.65],[140.69,40.83],[140.63,41.04],[140.42,41.2],[140.37,41.45],[140.5,41.75],[140.65,41.9],[140.73,41.77]] },
+      { to:'sapporo', day:'D4', name:'函馆 → 札幌', how:'特急北斗沿内浦湾北上，约 3h45m', pts:[[140.73,41.77],[140.65,41.9],[140.58,42.1],[140.3,42.25],[140.37,42.52],[140.72,42.57],[140.98,42.38],[141.12,42.44],[141.6,42.64],[141.67,42.82],[141.35,43.06]] },
+      { to:'shirogane', day:'D5', name:'札幌 → 旭川 → 白金温泉', how:'特急 85 分，道北巴士', mid:[{id:'asahikawa', at:.75}], pts:[[141.35,43.06],[141.78,43.2],[141.91,43.56],[142.36,43.77],[142.47,43.59],[142.64,43.48]] },
+      { to:'furano', day:'D6', name:'白金 → 美瑛 → 富良野', how:'巴士 + 富良野线 40 分', pts:[[142.64,43.48],[142.52,43.5],[142.47,43.45],[142.38,43.34]] },
+      { to:'niseko', day:'D8', name:'富良野 → 小樽 → 二世谷', how:'经泷川、札幌，约 5h', mid:[{id:'otaru', at:.72}], pts:[[142.38,43.34],[141.95,43.5],[141.82,43.22],[141.40,43.09],[141.00,43.19],[140.78,43.19],[140.78,42.95],[140.70,42.86]] },
+      { to:'noboribetsu', day:'D11', name:'二世谷 → 留寿都 → 登别', how:'打车约 45 分，滑半天，Resort Liner 巴士', mid:[{id:'rusutsu', at:.4}], pts:[[140.70,42.86],[140.80,42.80],[140.90,42.74],[141.0,42.62],[141.10,42.49]] },
+      { to:'cts', day:'D12', name:'登别 → 新千岁机场', how:'直达巴士约 1h', pts:[[141.10,42.49],[141.35,42.6],[141.69,42.78]] }
+    ];
+
+    var grat = mk('g', {}, svg);
+    for (var lat=41; lat<=44; lat++){ var y = proj([139.3,lat])[1]; mk('line', {x1:0, y1:f(y), x2:470, y2:f(y), 'class':'grat'}, grat); mk('text', {x:4, y:f(y-4), 'class':'grat-t'}, grat).textContent = lat + '°N'; }
+    for (var lon=140; lon<=143; lon++){ var x = proj([lon,44.5])[0]; mk('line', {x1:f(x), y1:0, x2:f(x), y2:650, 'class':'grat'}, grat); mk('text', {x:f(x+4), y:12, 'class':'grat-t'}, grat).textContent = lon + '°E'; }
+    var land = mk('g', {}, svg);
+    [HOKKAIDO, HONSHU, OKUSHIRI].forEach(function(ll){ mk('path', {d:curve(ll, true), 'class':'land'}, land); });
+    var seas = mk('g', {}, svg);
+    [['日本海',[139.5,43.75],'sea-t v'],['太平洋',[142.55,41.55],'sea-t'],['津轻海峡',[140.55,41.42],'sea-t'],['内浦湾',[140.55,42.3],'sea-t']].forEach(function(s){
+      var p = proj(s[1]); var t = mk('text', {x:f(p[0]), y:f(p[1]), 'class':s[2], 'text-anchor':'middle'}, seas); t.textContent = s[0];
+      if (s[0] === '津轻海峡' || s[0] === '内浦湾') t.style.fontSize = '9.5px';
+    });
+    var gl = mk('g', {}, svg), legEls = [];
+    LEGS.forEach(function(L){ var d = curve(L.pts, false); mk('path', {d:d, 'class':'leg-base'}, gl); legEls.push(mk('path', {d:d, 'class':'leg'}, gl)); });
+    var gs = mk('g', {}, svg);
+    ST.forEach(function(s){
+      var p = proj(s.ll);
+      var g = mk('g', {'class':'st on', transform:'translate(' + f(p[0]) + ' ' + f(p[1]) + ')'}, gs); s.g = g;
+      if (s.entry){ mk('text', {x:8, y:0, 'class':'entry-t'}, g).textContent = '↑ 从东京北上 · 新干线 714 km'; return; }
+      mk('circle', {r:10, 'class':'halo'}, g); mk('circle', {r:4.6, 'class':'dot'}, g);
+      var a = s.a || (s.dx < 0 ? 'end' : 'start');
+      mk('text', {x:s.dx, y:s.dy, 'text-anchor':a, 'class':'zh'}, g).textContent = s.zh;
+      mk('text', {x:s.dx, y:s.dy + 12, 'text-anchor':a, 'class':'ja'}, g).textContent = s.ja;
+    });
+
+    var lens = legEls.map(function(p){ return p.getTotalLength(); });
+    var total = lens.reduce(function(a,b){ return a+b; }, 0);
+    var ranges = [], th = {}, acc = 0;
+    LEGS.forEach(function(L, i){
+      var a = acc/total; acc += lens[i]; var b = acc/total; ranges.push([a,b]); th[L.to] = b;
+      (L.mid || []).forEach(function(m){ th[m.id] = a + (b-a)*m.at; });
+    });
+    legEls.forEach(function(p, i){ p.style.strokeDasharray = f(lens[i]) + ' ' + f(lens[i]+2); });
+    var items = Array.prototype.slice.call(document.querySelectorAll('#legs li'));
+    var cap = document.getElementById('legNow');
+    var last = -2;
+    function set(pr){
+      legEls.forEach(function(p, i){ var r = ranges[i]; var t = Math.max(0, Math.min(1, (pr - r[0])/(r[1]-r[0]))); p.style.strokeDashoffset = f(lens[i]*(1-t)); });
+      ST.forEach(function(s){ if (!s.entry) s.g.classList.toggle('on', pr >= th[s.id] - 0.002); });
+      var cur = -1;
+      if (pr > 0.001){ cur = ranges.findIndex(function(r){ return pr < r[1]; }); if (cur < 0) cur = LEGS.length-1; }
+      if (cur !== last){
+        last = cur;
+        items.forEach(function(li, i){ li.classList.toggle('on', i === cur); });
+        if (cap){
+          if (cur < 0) cap.innerHTML = '<b>全程</b>约 1,900 km，铁路 + 巴士<em>往下滚动开始</em>';
+          else cap.innerHTML = '<b>' + LEGS[cur].day + '</b>' + LEGS[cur].name + '<em>' + LEGS[cur].how + '</em>';
+        }
+      }
+    }
+    return { set:set };
+  })();
+
+  /* 叠压章节：内容比屏幕高的章节先滚到底再停住 */
+  var days = Array.prototype.slice.call(document.querySelectorAll('.day'));
+  var hdr = document.querySelector('.hdr');
+  function fitDays(){
+    var h = hdr ? hdr.offsetHeight : 52, vh = window.innerHeight;
+    days.forEach(function(d){ d.style.top = Math.min(h, vh - d.offsetHeight) + 'px'; });
+  }
+  fitDays();
+
+  /* 顶部进度条 */
+  var bar = document.getElementById('progress'), ticking = false;
+  function prog(){
+    ticking = false;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, window.scrollY/max) : 0) + ')';
+  }
+  window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(prog); } }, { passive:true });
+  prog();
+
+  /* 当日指示 */
+  var ind = document.getElementById('dayind'), indNo = document.getElementById('dayindNo'), indPlace = document.getElementById('dayindPlace');
+  function showDay(d){ var n = days.indexOf(d) + 1; indNo.textContent = 'DAY ' + (n < 10 ? '0' + n : n) + ' / 12'; indPlace.textContent = d.getAttribute('data-label'); }
+
+  if (motion){
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* 片名逐字升起 */
+    document.querySelectorAll('.hero-title .line').forEach(function(line){
+      line.innerHTML = Array.prototype.map.call(line.textContent, function(c){ return '<span class="ch">' + c + '</span>'; }).join('');
+    });
+    gsap.from('.hero-title .ch', { yPercent:110, duration:1.3, ease:'expo.out', stagger:.07, delay:.1 });
+    gsap.from(['.eyebrow', '.hero-latin', '.lead', '.facts', '.assume', '.hero-cta'], { y:20, opacity:0, duration:1, ease:'power3.out', stagger:.08, delay:.45 });
+
+    /* 路线描线 */
+    if (map){
+      var proxy = { p:0 }; map.set(0);
+      gsap.to(proxy, { p:1, ease:'none', onUpdate:function(){ map.set(proxy.p); },
+        scrollTrigger:{ trigger:'.route', start:'top top', end:'bottom bottom', scrub:.6 } });
+    }
+
+    /* 章节叠压：下一章盖上来时，上一章后退变暗 */
+    ScrollTrigger.addEventListener('refreshInit', fitDays);
+    days.forEach(function(d, i){
+      var next = days[i+1];
+      if (next){
+        gsap.fromTo(d.querySelector('.day-card'), { '--cover':0 }, { '--cover':1, ease:'none',
+          scrollTrigger:{ trigger:next, start:'top bottom', end:function(){ return 'top ' + (hdr ? hdr.offsetHeight : 52) + 'px'; }, scrub:true, invalidateOnRefresh:true } });
+      }
+      var ja = d.querySelector('.day-ja');
+      gsap.fromTo(ja, { yPercent:12 }, { yPercent:-12, ease:'none', scrollTrigger:{ trigger:d, start:'top bottom', end:'bottom top', scrub:true } });
+      var tks = d.querySelectorAll('.ticket');
+      if (tks.length) gsap.from(tks, { x:-36, rotate:-2.5, duration:.9, ease:'power3.out', stagger:.12,
+        scrollTrigger:{ trigger:d, start:'top 70%', toggleActions:'play none none reverse' } });
+      ScrollTrigger.create({ trigger:d, start:'top 55%', end:'bottom 55%', onToggle:function(self){ if (self.isActive) showDay(d); } });
+    });
+    ScrollTrigger.create({ trigger:'#daysStack', start:'top 60%', end:'bottom 40%', toggleClass:{ targets:ind, className:'show' } });
+
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
+    window.addEventListener('load', function(){ ScrollTrigger.refresh(); });
+  } else {
+    var route = document.querySelector('.route'); if (route) route.classList.add('static');
+    if (map) map.set(1);
+    window.addEventListener('resize', fitDays);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitDays);
+    if ('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) showDay(e.target); }); }, { rootMargin:'-50% 0px -50% 0px' });
+      days.forEach(function(d){ io.observe(d); });
+      var stack = document.getElementById('daysStack');
+      if (stack) new IntersectionObserver(function(es){ ind.classList.toggle('show', es[0].isIntersecting); }, { rootMargin:'-40% 0px -40% 0px' }).observe(stack);
+    }
+  }
+
+  /* 飘雪：滚动越快，风越大 */
+  if (!reduce){
+    var cv = document.getElementById('snow'), ctx = cv.getContext('2d');
+    var W, H, flakes = [], wind = 0, gust = 0, lastY = window.scrollY, raf = 0, color = tok('--snow') || '#EAF1F7';
+    function flake(init){ var z = Math.random(); return { x:Math.random()*W, y:init ? Math.random()*H : -8, r:.5 + z*2, vy:.25 + z*.85, vx:(Math.random()-.5)*.25, a:.2 + z*.5, ph:Math.random()*6.28 }; }
+    function size(){
+      var dpr = Math.min(2, window.devicePixelRatio || 1); W = window.innerWidth; H = window.innerHeight;
+      cv.width = W*dpr; cv.height = H*dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var n = Math.round(Math.min(130, W*H/10000)); flakes = []; for (var i=0; i<n; i++) flakes.push(flake(true));
+    }
+    function tick(){
+      var y = window.scrollY; gust += (y - lastY) * .015; lastY = y; gust *= .9; gust = Math.max(-4, Math.min(4, gust)); wind += (gust - wind) * .08;
+      ctx.clearRect(0, 0, W, H); ctx.fillStyle = color;
+      for (var i=0; i<flakes.length; i++){
+        var fl = flakes[i]; fl.ph += .012;
+        fl.x += fl.vx + Math.sin(fl.ph)*.28 + wind*fl.r*.35; fl.y += fl.vy - wind*.15*fl.r;
+        if (fl.y > H + 8 || fl.y < -12 || fl.x < -16 || fl.x > W + 16){ var nf = flake(false); if (fl.vy - wind*.15*fl.r < 0) nf.y = H + 6; fl.x = nf.x; fl.y = nf.y; fl.r = nf.r; fl.vy = nf.vy; fl.a = nf.a; }
+        ctx.globalAlpha = fl.a; ctx.beginPath(); ctx.arc(fl.x, fl.y, fl.r, 0, 6.283); ctx.fill();
+      }
+      raf = requestAnimationFrame(tick);
+    }
+    size(); tick();
+    window.addEventListener('resize', size);
+    document.addEventListener('visibilitychange', function(){ if (document.hidden) cancelAnimationFrame(raf); else { lastY = window.scrollY; raf = requestAnimationFrame(tick); } });
+  }
+
+  /* 预订清单：只存在本机浏览器 */
+  (function(){
+    var KEY = 'hk26-checklist-v2', saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+    var boxes = Array.prototype.slice.call(document.querySelectorAll('.chk input'));
+    var done = document.getElementById('chkDone'); document.getElementById('chkAll').textContent = boxes.length;
+    function upd(){ done.textContent = boxes.filter(function(b){ return b.checked; }).length; }
+    boxes.forEach(function(b){
+      b.checked = !!saved[b.id];
+      b.addEventListener('change', function(){ saved[b.id] = b.checked; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {} upd(); });
+    });
+    upd();
+  })();
+})();
+</script>
+</body>
+</html>
