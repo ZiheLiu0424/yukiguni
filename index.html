@@ -57,6 +57,9 @@ a{color:var(--ice)}
 .progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--ice),var(--lamp))}
 
 #snow{position:fixed;inset:0;z-index:45;pointer-events:none}
+/* 页内跳转的转场：淡入夜色 → 跳到目标 → 淡出 */
+#cut{position:fixed;inset:0;z-index:49;background:var(--night);opacity:0;pointer-events:none;transition:opacity .4s ease}
+#cut.on{opacity:1;transition:opacity .22s ease}
 
 /* 首屏 */
 .hero{position:relative;overflow:hidden;padding-block:calc(var(--hdr) + env(safe-area-inset-top,0px) + 64px) 150px;background:radial-gradient(900px 520px at 82% 0%,var(--moon),transparent 62%),linear-gradient(180deg,var(--night),var(--tone-city))}
@@ -371,6 +374,7 @@ h3.sub{font:700 20px/1.4 var(--f-display);margin:48px 0 16px}
   <div class="progress" id="progress"></div>
 </header>
 <canvas id="snow" aria-hidden="true"></canvas>
+<div id="cut" aria-hidden="true"></div>
 
 <main>
 <section class="hero" id="top">
@@ -1258,11 +1262,54 @@ h3.sub{font:700 20px/1.4 var(--f-display);margin:48px 0 16px}
   /* 叠压章节：内容比屏幕高的章节先滚到底再停住 */
   var days = Array.prototype.slice.call(document.querySelectorAll('.day'));
   var hdr = document.querySelector('.hdr');
+  var stack = document.getElementById('daysStack');
+  /* 用 100svh 量屏幕高度：手机地址栏收起展开时不跟着变，卡片不会跳 */
+  var probe = document.createElement('div');
+  probe.style.cssText = 'position:fixed;left:0;top:0;width:1px;height:100vh;height:100svh;visibility:hidden;pointer-events:none';
+  document.body.appendChild(probe);
+  function stableVh(){ return probe.offsetHeight || window.innerHeight; }
+  function hdrH(){ return hdr ? hdr.offsetHeight : 52; }
   function fitDays(){
-    var h = hdr ? hdr.offsetHeight : 52, vh = window.innerHeight;
+    var h = hdrH(), vh = stableVh();
     days.forEach(function(d){ d.style.top = Math.min(h, vh - d.offsetHeight) + 'px'; });
   }
   fitDays();
+  /* 卡片是 sticky 的，停住后量到的是停住的位置。用容器顶部加前面卡片的高度算出它在文档流里的位置 */
+  function flowTop(i){
+    var t = stack.getBoundingClientRect().top + window.scrollY;
+    for (var k = 0; k < i; k++) t += days[k].offsetHeight;
+    return t;
+  }
+
+  /* 页内跳转：淡入夜色，直接跳到目标，再淡出，不再一路滚过十几张卡片 */
+  var cut = document.getElementById('cut');
+  function targetY(el){
+    var i = days.indexOf(el);
+    var y = i >= 0 ? flowTop(i) : el.getBoundingClientRect().top + window.scrollY;
+    return Math.max(0, Math.round(y - hdrH()));
+  }
+  function jumpTo(y){
+    var sb = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    root.style.scrollBehavior = sb;
+    if (motion) ScrollTrigger.update();
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1), el = id && document.getElementById(id);
+    if (!el) return;
+    e.preventDefault();
+    var y = targetY(el);
+    try { history.replaceState(null, '', '#' + id); } catch (err) {}
+    if (reduce || !cut || Math.abs(y - window.scrollY) < 40){ jumpTo(y); return; }
+    cut.classList.add('on');
+    setTimeout(function(){
+      jumpTo(y);
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ cut.classList.remove('on'); }); });
+    }, 230);
+  });
 
   /* 顶部进度条 */
   var bar = document.getElementById('progress'), ticking = false;
@@ -1296,21 +1343,28 @@ h3.sub{font:700 20px/1.4 var(--f-display);margin:48px 0 16px}
     }
 
     /* 章节叠压：下一章盖上来时，上一章后退变暗 */
+    ScrollTrigger.config({ ignoreMobileResize:true });
     ScrollTrigger.addEventListener('refreshInit', fitDays);
+    /* 所有起止点都用文档流位置算成具体数值，不让 ScrollTrigger 去量 sticky 卡片 */
     days.forEach(function(d, i){
       var next = days[i+1];
+      function covered(){ return next ? flowTop(i+1) - hdrH() : flowTop(i) + d.offsetHeight; }
       if (next){
         gsap.fromTo(d.querySelector('.day-card'), { '--cover':0 }, { '--cover':1, ease:'none',
-          scrollTrigger:{ trigger:next, start:'top bottom', end:function(){ return 'top ' + (hdr ? hdr.offsetHeight : 52) + 'px'; }, scrub:true, invalidateOnRefresh:true } });
+          scrollTrigger:{ start:function(){ return flowTop(i+1) - window.innerHeight; }, end:covered, scrub:true, invalidateOnRefresh:true } });
       }
-      var ja = d.querySelector('.day-ja');
-      gsap.fromTo(ja, { yPercent:12 }, { yPercent:-12, ease:'none', scrollTrigger:{ trigger:d, start:'top bottom', end:'bottom top', scrub:true } });
+      gsap.fromTo(d.querySelector('.day-ja'), { yPercent:12 }, { yPercent:-12, ease:'none',
+        scrollTrigger:{ start:function(){ return flowTop(i) - window.innerHeight; }, end:covered, scrub:true, invalidateOnRefresh:true } });
       var tks = d.querySelectorAll('.ticket');
       if (tks.length) gsap.from(tks, { x:-36, rotate:-2.5, duration:.9, ease:'power3.out', stagger:.12,
-        scrollTrigger:{ trigger:d, start:'top 70%', toggleActions:'play none none reverse' } });
-      ScrollTrigger.create({ trigger:d, start:'top 55%', end:'bottom 55%', onToggle:function(self){ if (self.isActive) showDay(d); } });
+        scrollTrigger:{ start:function(){ return flowTop(i) - window.innerHeight * .7; }, toggleActions:'play none none reverse', invalidateOnRefresh:true } });
+      ScrollTrigger.create({ start:function(){ return flowTop(i) - window.innerHeight * .45; },
+        end:function(){ return flowTop(i+1) - window.innerHeight * .45; },
+        onToggle:function(self){ if (self.isActive) showDay(d); } });
     });
-    ScrollTrigger.create({ trigger:'#daysStack', start:'top 60%', end:'bottom 40%', toggleClass:{ targets:ind, className:'show' } });
+    ScrollTrigger.create({ start:function(){ return flowTop(0) - window.innerHeight * .4; },
+      end:function(){ return flowTop(days.length) - window.innerHeight * .6; },
+      toggleClass:{ targets:ind, className:'show' } });
 
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
     window.addEventListener('load', function(){ ScrollTrigger.refresh(); });
